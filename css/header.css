@@ -42,6 +42,7 @@
   .close {
     font-family: 'Sunroll', sans-serif;
     font-size: 1.8em;
+    font-weight: 500;
     padding: 0.12em 0em 0.12em 0em;
     cursor: pointer;
     display: none; 
@@ -117,11 +118,21 @@
     font-weight: 800;
     text-align: center;
   }
+
+  /* Hover effect */
+.subnav a:hover {
+    color: #FEEDB6;
+    text-decoration: underline;
+}
   
   @media only screen and (min-width: 778px) {
     .burger, .close {
       display: none;
     }
+
+    #burger:not(:checked) ~ .burger {
+        display: none; 
+      }
   
     .subnav {
       position: static;
