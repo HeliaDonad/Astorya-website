@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Sunroll&display=swap');
+
+#logo {
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  #logo img {
+    width: 120%;
+    margin-top: -18px;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 28px 20px;
+    background-color: black;
+    /*border-bottom: 1px solid white;*/
+  }
+  
+  header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; 
+  }
+  
+  /* Hamburger */
+  .burger {
+    font-family: 'Sunroll', sans-serif;
+    font-size: 1.8em;
+    padding: 0.12em 0em 0.12em 0em;
+    font-weight: 500;
+    cursor: pointer;
+    display: inline-block;
+    color: white;
+    transition: opacity 0.3s;
+  }
+  
+  /* Kruis */
+  .close {
+    font-family: 'Sunroll', sans-serif;
+    font-size: 1.8em;
+    padding: 0.12em 0em 0.12em 0em;
+    cursor: pointer;
+    display: none; 
+    color: white;
+    top: 28px;
+    right: 20px;
+    z-index: 2;
+    position: fixed;
+  }
+  
+  .close::after {
+    content: "✕";
+    font-family: 'Sunroll', sans-serif;
+    font-weight: 500;
+}
+
+  #burger:checked ~ .burger {
+    opacity: 0; /* Verberg hamburger */
+  }
+  
+  #burger:checked ~ .close {
+    display: inline-block; /* Toon kruis */
+  }
+  
+  #burger:not(:checked) ~ .burger {
+    display: inline-block; /* Toon hamburger */
+  }
+  
+  #burger:not(:checked) ~ .close {
+    display: none;
+  }
+  
+  /* Overgangseffecten */
+  .burger,
+  .close {
+    transition: opacity 0.3s;
+  }
+  
+  #burger {
+    display: none;
+  }
+  
+  #burger:checked ~ .subnav {
+    transform: translateX(0); 
+  }
+  
+  #burger:checked ~ .subnav a {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .subnav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; 
+    background-color: linear-gradient(to bottom, #000000 0%, #273166 60%, #000000 100%);
+    z-index: 1;
+    transform: translateX(-100%); 
+    /*transition: all 0.2s ease-in;*/
+  }
+  
+  .subnav a {
+    display: inline-block;
+    padding: 1.65em 1.2em;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 800;
+    text-align: center;
+  }
+  
+  @media only screen and (min-width: 778px) {
+    .burger, .close {
+      display: none;
+    }
+  
+    .subnav {
+      position: static;
+      flex-direction: row;
+      width: auto;
+      left: auto;
+      margin-top: 0px;
+      transition: none;
+      height: auto;
+      transform: none;
+      justify-content: flex-start;
+    }
+  
+    .subnav a {
+      border: none;
+      display: flex;
+      padding: 0px 20px;
+      background-color: black;
+      color: white;
+      font-weight: 800;
+      opacity: 1;
+      transform: none;
+      transition: none;
+      border-bottom: none;
+    }
+
+    .close::after {
+        display: none;
+    }
+  }
+  
+  @media only screen and (min-width: 1024px) {
+  
+    .subnav a{
+        font-size: 20px;
+    }
+  }
+  
