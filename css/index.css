@@ -1,8 +1,47 @@
 @import url('https://fonts.googleapis.com/css2?family=Sunroll&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
 
 body {
-  font-family: 'Sunroll', sans-serif;
-  background: linear-gradient(to bottom, #000000 0%, #273166 60%, #000000 100%);
-  height: 100vh;
-  margin: 0;
+    font-family: 'Alice', sans-serif;
+    background: linear-gradient(to bottom, #000000 0%, #273166 60%, #000000 100%);
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    height: 100vh;
 }
+
+h1 {
+    font-family: 'Sunroll', sans-serif;
+    font-size: 3rem;
+    color: white;
+    letter-spacing: 3px;
+    margin-top: 120px;
+}
+
+.section {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.white-section {
+    background: white;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video-container {
+    max-width: 800px;
+    width: 90%;
+}
+
+.video-container video {
+    width: 100%;
+    border-radius: 10px;
+}
+
