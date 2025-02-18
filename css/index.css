@@ -62,32 +62,34 @@ h1 {
 
 .welcome {
     width: 100%;
+    max-width: 800px; 
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: center; 
+    justify-content: center; 
     color: white;
     text-align: center;
     padding: 0 10%;
+    margin: 0 auto; 
 }
 
 .welcome-top {
     display: flex;
     align-items: baseline;
     justify-content: flex-start; 
-    width: 100%; 
-    max-width: 1200px; 
+    width: 100%;
+    max-width: 800px;
     margin-bottom: 5px;
 }
 
+/* Logo Styling */
 .welcome-logo {
     width: 60px;
-    margin-left: 12px; 
+    margin-left: 12px;
     position: relative;
-    top: 6px; 
+    top: 6px;
 }
-
 
 /* Eerste tekst links */
 .welcome-top p {
@@ -98,13 +100,14 @@ h1 {
     text-align: left;
 }
 
+/* Onderste tekst gecentreerd */
 .welcome-bottom {
+    width: 100%;
+    max-width: 800px;
     display: flex;
     align-items: center;
-    justify-content: flex-end; 
-    width: 100%; 
-    max-width: 1200px; 
-    margin-top: 15px; 
+    justify-content: center; 
+    margin-top: 15px;
 }
 
 .welcome-bottom p {
@@ -112,15 +115,49 @@ h1 {
     font-size: 1.6rem;
     font-weight: normal;
     margin: 0;
-    text-align: right;
+    text-align: center;
 }
 
-
 @media only screen and (min-width: 778px) {
+    h1 {
+        font-size: 3rem;
+        margin-right: 160px;
+    }
 
+    .welcome-top p {
+        font-size: 2.2rem;
+    }
+
+    .welcome-bottom p {
+        font-size: 2.2rem;
+    }
+
+    .welcome-logo {
+        width: 80px;
+    }
+
+    .welcome {
+        max-width: 1800px; 
+    }
 }
 
 @media only screen and (min-width: 1024px) {
+    h1 {
+        font-size: 3.6rem;
+        margin-right: 400px;
+    }
+
+    .welcome-top p {
+        font-size: 2.8rem;
+    }
+
+    .welcome-bottom p {
+        font-size: 2.8rem;
+    }
+
+    .welcome-logo {
+        width: 100px;
+    }
 
 }
 
