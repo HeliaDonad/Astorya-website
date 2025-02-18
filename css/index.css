@@ -16,6 +16,10 @@ body {
     height: 100vh;
 }
 
+.hoofdletter{
+    font-family: 'Sunroll', serif;
+}
+
 h1 {
     font-family: 'Sunroll', sans-serif;
     font-size: 2.4rem;
@@ -130,7 +134,7 @@ h1 {
 .manifesto h2 {
     font-family: 'Sunroll', serif;
     font-size: 1.8rem;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
 }
 
 .manifesto p {

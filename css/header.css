@@ -163,6 +163,7 @@ header {
       transform: none;
       transition: none;
       border-bottom: none;
+      font-size: 14px;
     }
 
     .close::after {
