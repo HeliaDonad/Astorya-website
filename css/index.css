@@ -147,8 +147,7 @@ h1 {
     color: #333;
     text-align: justify;
 }
-
-/* Algemene sectie-styling */
+/* Algemene stijl */
 .carousel-section {
     display: flex;
     justify-content: center;
@@ -160,8 +159,8 @@ h1 {
     display: flex;
     flex-direction: row;
     align-items: center;
-    max-width: 1100px; /* Beperkt de breedte */
-    gap: 50px; /* Ruimte tussen tekst en afbeelding */
+    max-width: 1100px;
+    gap: 50px;
 }
 
 .carousel-text {
@@ -179,44 +178,49 @@ h1 {
     line-height: 1.5;
 }
 
+/* Stijl voor de carousel */
 .carousel {
     flex: 1;
-    max-width: 400px; /* Zorgt dat de afbeelding niet te groot wordt */
+    max-width: 400px;
+    overflow: hidden;
+    position: relative;
 }
 
 .carousel-container {
-    overflow: hidden;
     width: 100%;
-    border-radius: 10px;
+    overflow: hidden;
 }
 
 .carousel-slide {
     display: flex;
+    width: 400%; /* 4 afbeeldingen naast elkaar */
     transition: transform 0.5s ease-in-out;
 }
 
 .carousel-slide img {
     width: 100%;
-    border-radius: 15px;
+    height: auto;
 }
 
-/* Knoppen styling */
+/* Knoppen onder de afbeelding */
+.carousel-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
 .carousel-btn {
-    background: none;
-    border: none;
-    font-size: 2rem;
+    background-color: #ffffff;
+    border: 2px solid #000;
+    border-radius: 50%;
+    padding: 10px 15px;
+    font-size: 1.5rem;
     cursor: pointer;
-    color: #FFD700; /* Gouden kleur */
-    position: absolute;
-    bottom: -50px;
+    transition: 0.3s;
 }
 
-#prevBtn {
-    left: 35%;
-}
-
-#nextBtn {
-    right: 35%;
+.carousel-btn:hover {
+    background-color: #ddd;
 }
 
 
