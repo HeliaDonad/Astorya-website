@@ -118,6 +118,31 @@ h1 {
     text-align: center;
 }
 
+.manifesto {
+    max-width: 800px;
+    width: 90%;
+    text-align: center;
+    color: black;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.manifesto h2 {
+    font-family: 'Sunroll', serif;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.manifesto p {
+    font-family: 'Alice', serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    font-weight: normal;
+    color: #333;
+    text-align: justify;
+}
+
+
 @media only screen and (min-width: 778px) {
     h1 {
         font-size: 3rem;
@@ -139,6 +164,14 @@ h1 {
     .welcome {
         max-width: 1800px; 
     }
+
+    .manifesto h2 {
+        font-size: 2rem;
+    }
+
+    .manifesto p {
+        font-size: 1.2rem;
+    }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -157,6 +190,14 @@ h1 {
 
     .welcome-logo {
         width: 100px;
+    }
+
+    .manifesto h2 {
+        font-size: 2.2rem;
+    }
+
+    .manifesto p {
+        font-size: 1.4rem;
     }
 
 }
