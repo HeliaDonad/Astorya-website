@@ -130,6 +130,11 @@ header {
     color: #FEEDB6;
     text-decoration: underline;
 }
+
+.subnav a.active {
+  color: #FEEDB6;
+  text-decoration: underline;
+}
   
   @media only screen and (min-width: 778px) {
     .burger, .close {
