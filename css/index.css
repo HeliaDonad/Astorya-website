@@ -147,7 +147,7 @@ h1 {
     color: #333;
     text-align: justify;
 }
-/* Algemene stijl */
+
 .carousel-section {
     display: flex;
     justify-content: center;
@@ -163,66 +163,82 @@ h1 {
     gap: 50px;
 }
 
-.carousel-text {
-    flex: 1;
-    text-align: left;
+.features h3 {
+    font-family: 'Sunroll', serif;
+    font-size: 1.6rem;
+    margin-bottom: 25px;
+    color: white;
+    margin-top: 50px;
 }
 
-.carousel-text h2 {
-    font-size: 2rem;
-    margin-bottom: 10px;
+.features p {
+    font-family: 'Alice', serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    font-weight: normal;
+    color: white;
+    text-align: justify;
 }
 
-.carousel-text p {
-    font-size: 1.1rem;
-    line-height: 1.5;
-}
-
-/* Stijl voor de carousel */
-.carousel {
-    flex: 1;
-    max-width: 400px;
-    overflow: hidden;
+.features {
+    padding-top: 10px;
+    padding-bottom: 10px;
     position: relative;
 }
 
-.carousel-container {
-    width: 100%;
-    overflow: hidden;
+.features article { 
+    padding: 40px;
 }
 
-.carousel-slide {
-    display: flex;
-    width: 400%; /* 4 afbeeldingen naast elkaar */
-    transition: transform 0.5s ease-in-out;
-}
-
-.carousel-slide img {
-    width: 100%;
-    height: auto;
-}
-
-/* Knoppen onder de afbeelding */
-.carousel-buttons {
+.features article img {
     display: flex;
     justify-content: center;
-    margin-top: 10px;
+    max-width: 180px;
+    margin: auto;
 }
 
-.carousel-btn {
-    background-color: #ffffff;
-    border: 2px solid #000;
-    border-radius: 50%;
-    padding: 10px 15px;
-    font-size: 1.5rem;
+.features article div {
+    padding: 25px 25px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.feature-buttons {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-180%);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.feature-buttons button {
+    margin: 25px;
+    padding: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: 'Tomorrow', sans-serif;
+    font-weight: 700;
+    background-color: transparent;
+    color: #FEEDB6;
+    border: 1.5px solid #FEEDB6;
+    border-radius: 60px;
     cursor: pointer;
-    transition: 0.3s;
 }
 
-.carousel-btn:hover {
-    background-color: #ddd;
+.feature-buttons button:hover {
+    background-color: #f7e3a2;
+    color: #11152A;
+    border: 1.5px solid #11152A;
 }
 
+.features article:not(.active) {
+    display: none;
+}
 
 @media only screen and (min-width: 778px) {
     h1 {
