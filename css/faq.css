@@ -35,7 +35,6 @@ body {
     text-align: center;
     color: white;
     margin-top: 125px;
-    margin-bottom: 125px;
 }
 
 .faq h2 {
@@ -87,6 +86,64 @@ body {
     display: none; 
     margin-top: 8px;
     text-align: left;
+}
+
+.contact-faq {
+    width: 100%;
+    text-align: center;
+    padding: 0px 20px;
+    color: white;
+}
+
+.contact-container {
+    max-width: 700px;
+    margin: auto;
+}
+
+.contact-container h3 {
+    font-family: 'Sunroll', serif;
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+}
+
+.contact-container p {
+    font-family: 'Alice', serif;
+    font-size: 1rem;
+    margin-bottom: 25px;
+}
+
+/* E-mail invoerveld met kopieerknop */
+.email-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    padding: 10px 15px;
+    width: fit-content;
+    margin: auto;
+    font-family: 'Alice', serif;
+}
+
+#email-text {
+    font-size: 1rem;
+    color: white;
+    margin-right: 10px;
+}
+
+.copy-btn {
+    background: white;
+    color: black;
+    font-size: 0.9rem;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.copy-btn:hover {
+    background: #f7e3a2;
 }
 
 @media only screen and (min-width: 778px) {
