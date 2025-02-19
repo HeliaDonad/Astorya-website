@@ -129,8 +129,8 @@ h1 {
     width: 80%;
     text-align: center;
     color: black;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 75px;
+    margin-bottom: 75px;
 }
 
 .manifesto h2 {
@@ -240,6 +240,90 @@ h1 {
     display: none;
 }
 
+.faq-container {
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    margin-top: 75px;
+    margin-bottom: 75px;
+}
+
+.faq h2 {
+    font-family: 'Sunroll', serif;
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+    color: white;
+}
+
+.faq-items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.faq-question {
+    background: white;
+    color: black;
+    font-family: 'Alice', serif;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: left;
+    transition: background 0.3s ease-in-out;
+    position: relative;
+}
+
+/* Pijltje rechts */
+.faq-question::after {
+    content: "▼";
+    position: absolute;
+    right: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Pijltje naar boven wanneer actief */
+.faq-item.active .faq-question::after {
+    transform: rotate(180deg);
+}
+
+/* Antwoord-styling (verborgen) */
+.faq-answer {
+    background: white;
+    color: black;
+    font-family: 'Alice', serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    padding: 10px 12px;
+    border-radius: 5px;
+    display: none; /* Standaard verborgen */
+    margin-top: 8px;
+    text-align: left;
+}
+
+/* "Read More"-knop */
+.read-more {
+    background-color: #FEEDB6;
+    color: #11152A;
+    font-family: 'Alice', serif;
+    font-size: 1rem;
+    border: none;
+    padding: 8px 16px;
+    margin-top: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    display: block;
+    margin-left: auto; 
+    text-align: right;
+}
+
+.read-more:hover {
+    background-color: #f7e3a2;
+}
+
+
 @media only screen and (min-width: 778px) {
     h1 {
         font-size: 3rem;
@@ -296,6 +380,11 @@ h1 {
         text-align:left;
     }
 
+    .faq-container {
+        max-width: 800px;
+        width: 90%;
+    }
+
 }
 
 @media only screen and (min-width: 1024px) {
@@ -339,6 +428,7 @@ h1 {
     .features p {
         font-size: 1.4rem;
     }
+
 }
 
 
