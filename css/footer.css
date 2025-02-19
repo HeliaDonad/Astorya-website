@@ -45,7 +45,7 @@
 }
 
 .footer-links a:hover {
-    color: #bbb;
+    color: #FEEDB6;
 }
 
 .download-buttons img {
@@ -73,6 +73,7 @@
 
 .social-icons img:hover {
     opacity: 0.7;
+    /*color: #FEEDB6;*/
 }
 
 .footer-bottom {

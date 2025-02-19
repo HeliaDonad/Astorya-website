@@ -42,3 +42,7 @@ function copyEmail() {
     });
 }
 
+function redirectToFAQ() {
+    window.location.href = "../pagina's/faq.html"; // Redirect naar de FAQ pagina
+}
+
