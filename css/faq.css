@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Sunroll&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Alice', sans-serif;
+    background: linear-gradient(to bottom, #000000 0%, #273166 60%, #000000 100%);
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    height: 100vh;
+}
+
+.hoofdletter{
+    font-family: 'Sunroll', serif;
+}
+
+.section {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.faq-container {
+    max-width: 800px;
+    width: 90%;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    margin-top: 125px;
+    margin-bottom: 75px;
+}
+
+.faq h2 {
+    font-family: 'Sunroll', serif;
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+    color: white;
+}
+
+.faq-items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.faq-question {
+    background: white;
+    color: black;
+    font-family: 'Alice', serif;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: left;
+    transition: background 0.3s ease-in-out;
+    position: relative;
+}
+
+.faq-question::after {
+    content: "▼";
+    position: absolute;
+    right: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.faq-item.active .faq-question::after {
+    transform: rotate(180deg);
+}
+
+.faq-answer {
+    background: white;
+    color: black;
+    font-family: 'Alice', serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    padding: 10px 12px;
+    border-radius: 5px;
+    display: none; 
+    margin-top: 8px;
+    text-align: left;
+}
+
+@media only screen and (min-width: 778px) {
+
+    .faq-container {
+        max-width: 800px;
+        width: 90%;
+    }
+
+}
+
+@media only screen and (min-width: 1024px) {
+    
+}
+
+
+

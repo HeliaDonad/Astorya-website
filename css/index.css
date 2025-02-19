@@ -241,6 +241,8 @@ h1 {
 }
 
 .faq-container {
+    max-width: 800px;
+    width: 90%;
     border-radius: 10px;
     text-align: center;
     color: white;
@@ -310,7 +312,7 @@ h1 {
     font-size: 1rem;
     border: none;
     padding: 8px 16px;
-    margin-top: 15px;
+    margin-top: 20px;
     border-radius: 5px;
     cursor: pointer;
     transition: background 0.3s ease-in-out;
@@ -322,7 +324,6 @@ h1 {
 .read-more:hover {
     background-color: #f7e3a2;
 }
-
 
 @media only screen and (min-width: 778px) {
     h1 {
