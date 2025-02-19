@@ -146,6 +146,30 @@ body {
     background: #f7e3a2;
 }
 
+.popup-message {
+    position: fixed;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.9);
+    color: black;
+    font-family: 'Alice', serif;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeInOut 2s ease-in-out;
+}
+
+/* Animatie voor fade-in en fade-out */
+@keyframes fadeInOut {
+    0% { opacity: 0; transform: translateX(-50%) translateY(10px); }
+    10% { opacity: 1; transform: translateX(-50%) translateY(0); }
+    90% { opacity: 1; transform: translateX(-50%) translateY(0); }
+    100% { opacity: 0; transform: translateX(-50%) translateY(-10px); }
+}
+
+
 @media only screen and (min-width: 778px) {
 
     .faq-container {

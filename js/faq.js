@@ -23,3 +23,22 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+function copyEmail() {
+    const emailText = document.getElementById("email-text").innerText;
+    navigator.clipboard.writeText(emailText).then(() => {
+        // Maak een pop-up element aan
+        const popup = document.createElement("div");
+        popup.innerText = "Email copied!";
+        popup.classList.add("popup-message");
+
+        // Voeg de pop-up toe aan de body
+        document.body.appendChild(popup);
+
+        // Laat de pop-up na 2 seconden verdwijnen
+        setTimeout(() => {
+            popup.remove();
+        }, 2000);
+    });
+}
+
