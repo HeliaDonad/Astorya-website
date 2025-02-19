@@ -269,6 +269,33 @@ h1 {
     .manifesto p {
         font-size: 1.2rem;
     }
+
+    .features h3 {
+        font-size: 1.8rem;
+    }
+
+    .features p {
+        font-size: 1.2rem;
+    }
+
+    .features article {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding-left: 120px;
+    }
+
+    .feature-buttons {
+        transform: translateY(-50%);
+        box-sizing: border-box;
+    }
+
+    .features article div {
+        padding: 20px 100px 20px 20px;
+        justify-content: flex-end;
+        text-align:left;
+    }
+
 }
 
 @media only screen and (min-width: 1024px) {
@@ -297,6 +324,21 @@ h1 {
         font-size: 1.4rem;
     }
 
+    .features article {
+        padding-left: 180px;
+    }
+
+    .features article div {
+        padding: 20px 140px 20px 20px;
+    }
+
+    .features h2 {
+        font-size: 2rem;
+    }
+
+    .features p {
+        font-size: 1.4rem;
+    }
 }
 
 
