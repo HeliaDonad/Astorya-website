@@ -42,11 +42,10 @@ h1 {
     overflow: hidden;
 }
 
-/*.overlay {
+.overlay {
     background: 
-        url('../images/Overlay-stars.png') no-repeat center center/cover, 
-        url('../images/stars-background.png') no-repeat center center/cover;
-} */
+        url('../images/Overlay-stars.png') no-repeat center center/cover
+} 
 
 #starsCanvas {
     position: absolute;
