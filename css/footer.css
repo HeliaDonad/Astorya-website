@@ -56,8 +56,6 @@
 .social-icons {
     width: 100%;
     display: flex;
-    justify-content: center; 
-    align-items: center;
     margin-top: -10px;
     gap: 15px; 
 }
@@ -83,3 +81,18 @@
     color: white;
     text-align: center;
 }
+
+@media only screen and (min-width: 778px) {
+
+}
+
+@media only screen and (min-width: 1024px) {
+    .footer-container {
+        justify-content: space-between; 
+        align-items: flex-start;
+        text-align: left;
+        max-width: 1200px;
+        margin: auto;
+    }
+}
+
