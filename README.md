@@ -9,6 +9,7 @@ AL GDN:
 kleine to do aanpassingen:
 - lettertype groottes aanpassen (mobile - tablet - desktop)
 - mockups van bij features aanpassen
+- Font juist erin zetten
 
 TO DO:
 - Home: Plans & Pricing
