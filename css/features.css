@@ -1,5 +1,38 @@
-.title-section h1 {
+/* .title-section h1 {
+    padding: 0;
     font-family: "SUNROLL";
-    margin-bottom: 20rem;
+    margin: 24px 0 43rem 24px ;
     color: var(--white-color);
+    width: 400px;
+    font-size: 24px;
+}
+
+.title-section p {
+    font-family: "Alice";
+    color: var(--white-color);
+} */
+.title-section h1 {
+    margin-top: 0; /* Zorgt ervoor dat er geen extra ruimte boven het H1-element is */
+    padding-top: 0;
+}
+
+header {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+nav {
+    padding-bottom: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+.title-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 10vh; /* Past de hoogte aan zodat het mooi aansluit */
 }
