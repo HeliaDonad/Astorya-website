@@ -1,6 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Sunroll&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
-
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +6,7 @@
 
 body {
     font-family: 'Alice', sans-serif;
-    background: linear-gradient(to bottom, #000000 0%, #273166 60%, #000000 100%);
+    background: var(--gradient-color);
     background-size: cover;
     background-attachment: fixed;
     margin: 0;
@@ -23,7 +20,7 @@ body {
 h1 {
     font-family: 'Sunroll', sans-serif;
     font-size: 2.4rem;
-    color: white;
+    color: var(--white-color);
     position: absolute;
     bottom: 5%;
     left: 0%;
@@ -57,7 +54,7 @@ h1 {
 }
 
 .white-section {
-    background: white;
+    background: var(--white-color);
     width: 100%;
     min-height: 100vh;
     display: flex;
@@ -83,7 +80,7 @@ h1 {
     flex-direction: column;
     align-items: center; 
     justify-content: center; 
-    color: white;
+    color: var(--white-color);
     text-align: center;
     padding: 0 10%;
     margin: 0 auto; 
@@ -137,7 +134,7 @@ h1 {
     max-width: 800px;
     width: 80%;
     text-align: center;
-    color: black;
+    color: var(--black-color);
     margin-top: 75px;
     margin-bottom: 75px;
 }
@@ -176,7 +173,7 @@ h1 {
     font-family: 'Sunroll', serif;
     font-size: 1.6rem;
     margin-bottom: 25px;
-    color: white;
+    color: var(--white-color);
     margin-top: 50px;
 }
 
@@ -185,7 +182,7 @@ h1 {
     font-size: 1rem;
     line-height: 1.6;
     font-weight: normal;
-    color: white;
+    color: var(--white-color);
     text-align: justify;
 }
 
@@ -233,16 +230,16 @@ h1 {
     font-family: 'Tomorrow', sans-serif;
     font-weight: 700;
     background-color: transparent;
-    color: #FEEDB6;
-    border: 1.5px solid #FEEDB6;
+    color: var(--yellow-color);
+    border: 1.5px solid var(--yellow-color);
     border-radius: 60px;
     cursor: pointer;
 }
 
 .feature-buttons button:hover {
-    background-color: #f7e3a2;
-    color: #11152A;
-    border: 1.5px solid #11152A;
+    background-color:var(--yellow-color);
+    color: var(--dark-blue-color);
+    border: 1.5px solid var(--dark-blue-color);
 }
 
 .features article:not(.active) {
@@ -263,7 +260,7 @@ h1 {
     font-family: 'Sunroll', serif;
     font-size: 1.8rem;
     margin-bottom: 25px;
-    color: white;
+    color: var(--white-color);
 }
 
 .faq-items {
@@ -273,8 +270,8 @@ h1 {
 }
 
 .faq-question {
-    background: white;
-    color: black;
+    background: var(--white-color);
+    color: var(--black-color);
     font-family: 'Alice', serif;
     font-size: 1rem;
     font-weight: 600;
@@ -301,8 +298,8 @@ h1 {
 
 /* Antwoord-styling (verborgen) */
 .faq-answer {
-    background: white;
-    color: black;
+    background: var(--white-color);
+    color: var(black-color);
     font-family: 'Alice', serif;
     font-size: 1rem;
     line-height: 1.6;
@@ -315,8 +312,8 @@ h1 {
 
 /* "Read More"-knop */
 .read-more {
-    background-color: #FEEDB6;
-    color: #11152A;
+    background-color: var(--yellow-color);
+    color: var(--black-color);
     font-family: 'Alice', serif;
     font-size: 1rem;
     border: none;
@@ -331,7 +328,7 @@ h1 {
 }
 
 .read-more:hover {
-    background-color: #f7e3a2;
+    background-color: var(--yellow-color);
 }
 
 @media only screen and (min-width: 778px) {
@@ -438,7 +435,4 @@ h1 {
     .features p {
         font-size: 1.4rem;
     }
-
 }
-
-

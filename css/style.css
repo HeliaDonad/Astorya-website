@@ -1,0 +1,8 @@
+:root {
+    --white-color: #FFFDFD;
+    --gradient-color: linear-gradient(to bottom, #000000 0%, #273166 60%, #000000 100%);
+    --black-color: #131212;
+    --yellow-color: #FEEDB6;
+    --dark-blue-color: #11152A;
+    --pure-black: #000000;
+}
