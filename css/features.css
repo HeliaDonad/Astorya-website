@@ -1,38 +1,132 @@
-/* .title-section h1 {
+@import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
+
+* {
+    margin: 0;
     padding: 0;
-    font-family: "SUNROLL";
-    margin: 24px 0 43rem 24px ;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Alice', sans-serif;
+    background: var(--gradient-color);
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    height: 100vh;
+}
+
+.header h1 {
     color: var(--white-color);
-    width: 400px;
-    font-size: 24px;
+    font-family: "Sunroll", serif;
+    margin: 120px 24px 24px 24px;
 }
 
-.title-section p {
-    font-family: "Alice";
+.header p {
     color: var(--white-color);
-} */
-.title-section h1 {
-    margin-top: 0; /* Zorgt ervoor dat er geen extra ruimte boven het H1-element is */
-    padding-top: 0;
+    margin: 24px 24px 48px 24px;
+    line-height: 1.5;
 }
 
-header {
-    margin-bottom: 0;
-    padding-bottom: 0;
+.feature {
+    background-color: var(--white-color);
 }
 
-nav {
-    padding-bottom: 0;
-}
-
-header {
+.feature,
+.feature-twee {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: top;
+    text-align: left;
+    padding: 40px 24px;
 }
 
-.title-section {
-    display: flex;
+.feature img,
+.feature-twee img {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.feature-text,
+.feature-text-twee {
+    max-width: 400px;
+}
+
+.feature-text h2,
+.feature-text-twee h2 {
+    font-family: "Sunroll", serif;
+    margin: 24px 12px;
+}
+
+.feature-text-twee h2,
+.feature-text-twee p {
+    color: var(--white-color);
+    line-height: 1.5;
+}
+
+.feature-text p,
+.feature-text-twee p {
+    margin: 12px 12px;
+    line-height: 2;
+}
+
+@media only screen and (min-width: 778px) {
+    .feature {
+        align-items: top;
+        justify-content: center; /* Added to center content horizontally */
+        text-align: left;    
+    }
+
+.feature-text,
+.feature-text-twee {
+    max-width: 600px;
+    font-size: 16px;
+}
+
+
+section.feature-twee {
     justify-content: center;
-    align-items: center;
-    min-height: 10vh; /* Past de hoogte aan zodat het mooi aansluit */
+}
+}
+
+
+@media only screen and (min-width: 1024px) {
+    .header h1 {
+        
+        margin: 120px 64px 24px 64px;
+    }
+    
+    .header p {
+        color: var(--white-color);
+        margin: 24px 64px 48px 64px;
+        line-height: 1.5;
+    }
+    .feature img,
+    .feature-twee img {
+    width: 250px;
+    margin-bottom: 20px;
+}
+    .feature {
+        align-items: top;
+        justify-content: center; /* Added to center content horizontally */
+        text-align: left;    
+    }
+
+    .feature-text h2,
+    .feature-text-twee h2 {
+        font-size: 32px;
+    }
+
+    .feature-text p,
+    .feature-text-twee p {
+        font-size: 18px;
+    }
+
+    .feature-text,
+    .feature-text-twee {
+    max-width: 500px;
+}
+
+section.feature-twee {
+    justify-content: center;
+}
 }
