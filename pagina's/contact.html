@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/contact.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+</head>
+<body>
+    <header>
+        <nav>
+          <a id="logo" href="../index.html">
+            <img src="../images/Logo-horizontal.svg" alt="Astorya logo">
+          </a>
+          <input type="checkbox" id="burger">
+          <label class="burger" for="burger">&#9776;</label>
+          <label class="close" for="burger"></label>
+          <div class="subnav">
+            <a href="../index.html">Home</a>
+            <a href="./features.html">Features</a>
+            <a href="./pricing.html">Pricing</a>
+            <a href="./faq.html">FAQ</a>
+            <a href="./about.html">About us</a>
+            <a href="./contact.html">Contact</a>
+          </div>
+        </nav>
+      </header>
+
+      <section class="header-contact">
+        <h1>Get in touch with us</h1>
+        <p>Questions, feedback, or just want to say hi? Reach out 
+            — we’re here for you.</p>
+      </section>
+
+    <section class="contact-form">
+        <form action="#" method="POST">
+            <label for="firstname">First Name</label>
+            <input type="text" id="firstname" name="firstname" placeholder="John" required>
+            
+            <label for="lastname">Last Name</label>
+            <input type="text" id="lastname" name="lastname" placeholder="Doe" required>
+            
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="John@gmail.com" required>
+            
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="+324 57 85 40 54" required>
+            
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Leave us a message..." required></textarea>
+            
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Our Story</h3>
+                <p>
+                    Astorya began with a simple belief — that memories deserve a place to shine forever.
+                    Born from the desire to create meaningful connections beyond time, we built a space
+                    where stories, love, and legacies can live on.<br><br>
+                    Because every life is a constellation of moments worth remembering.
+                </p>
+            </div>
+    
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="./features.html">Features</a></li>
+                    <li><a href="./pricing.html">Pricing</a></li>
+                    <li><a href="./faq.html">FAQ</a></li>
+                    <li><a href="./about.html">About us</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section">
+                <h3>Download the App</h3>
+                <div class="download-buttons">
+                    <a href="#"><img src="../images/google-play.svg" alt="Google Play"></a>
+                    <a href="#"><img src="../images/app-store.svg" alt="App Store"></a>
+                </div>
+            </div>
+            
+            <div class="social-icons">
+                <a href="#"><img src="../images/instagram-icon.svg" alt="Instagram"></a>
+                <a href="#"><img src="../images/tiktok-icon.svg" alt="TikTok"></a>
+                <a href="#"><img src="../images/facebook-icon.svg" alt="Facebook"></a>
+                <a href="#"><img src="../images/email-icon.svg" alt="Email"></a>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p>© 2025 Astorya. All rights reserved. Shine bright, always.</p>
+        </div>
+    </footer>
+    
+    <script src="../js/active-nav.js"></script>
+    </body>
+    </html>
