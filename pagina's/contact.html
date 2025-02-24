@@ -38,22 +38,34 @@
 
     <section class="contact-form">
         <form action="#" method="POST">
-            <label for="firstname">First Name</label>
-            <input type="text" id="firstname" name="firstname" placeholder="John" required>
-            
-            <label for="lastname">Last Name</label>
-            <input type="text" id="lastname" name="lastname" placeholder="Doe" required>
-            
-            <label for="email">Email Address</label>
-            <input type="email" id="email" name="email" placeholder="John@gmail.com" required>
-            
-            <label for="phone">Phone Number</label>
-            <input type="tel" id="phone" name="phone" placeholder="+324 57 85 40 54" required>
-            
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="4" placeholder="Leave us a message..." required></textarea>
-            
-            <button type="submit">Send Message</button>
+            <div class="name-group">
+                <div>
+                    <label for="firstname">First Name</label>
+                    <input type="text" id="firstname" name="firstname" placeholder="John" required>
+                </div>
+                <div>
+                    <label for="lastname">Last Name</label>
+                    <input type="text" id="lastname" name="lastname" placeholder="Doe" required>
+                </div>
+            </div>
+        
+            <div class="contact-group">
+                <div>
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="John@gmail.com" required>
+                </div>
+                <div>
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+324 57 85 40 54" required>
+                </div>
+            </div>
+            <div>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" placeholder="Leave us a message..." required></textarea>
+            </div>
+            <div>
+                <button class="button" type="submit">Send Message</button>
+            </div>
         </form>
     </section>
 
