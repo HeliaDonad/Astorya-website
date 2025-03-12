@@ -437,133 +437,145 @@ h1 {
     }
 }
 
-
-
 .pricing-section {
-    background: var(--white-color);
-    color: var(--black-color);
+    background: linear-gradient(to bottom, #0f0f23, #1a1a3d);
+    color: #fff;
     text-align: center;
-    padding: 5rem 1rem;
-  }
-  
-  .pricing-section h2 {
-    font-size: 2rem;
+    padding: 4rem 1rem;
+    border-radius: 10px;
+}
+
+.pricing-section h2 {
+    font-size: 2.2rem;
     margin-bottom: 2rem;
     font-weight: 600;
-  }
-  
-  /* Disclaimer onderaan de sectie */
-  .pricing-section .disclaimer {
-    margin-top: 1rem;
-    font-size: 0.9rem;
-    color: var(--black-color);
-    max-width: 600px;
-    text-align: left;
-    line-height: 1.4;
-    opacity: 0.7;
-  }
-  
-  .pricing-cards {
+}
+
+.pricing-cards {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    gap: 2rem;           /* ruimte tussen de kaarten */
-    flex-wrap: wrap;     /* breek naar volgende regel bij kleinere schermen */
-    max-width: 1200px;   /* optioneel: begrens de breedte */
-    margin: 0 auto;      /* centreer in het midden */
-  }
+    gap: 2rem;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
-  .card {
-    background-color: var(--white-color);
-    color: var(--black-color);
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-    width: 300px;           /* vaste breedte (pas aan indien gewenst) */
-    min-height: 450px;      /* ongeveer, zodat ze wat gelijk trekken */
+.card {
+    background-color: #181830;
+    color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    width: 320px;
+    min-height: 450px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     padding: 1.5rem;
     text-align: left;
-  }
-  
-  /* Titel en prijs bovenin de kaart */
-  .card-header h3 {
-    font-size: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.card-header h3 {
+    font-size: 1.8rem;
     margin-bottom: 0.5rem;
-  }
-  
-  .price {
+}
+
+.price {
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 1rem;
-  }
-  
-  .price span {
+    color: var(--yellow-color);
+}
+
+.price span {
     font-size: 1rem;
     font-weight: 400;
-    color: #666;
+    color: #bbb;
     margin-left: 0.25rem;
-  }
-  
-  /* Features-lijst */
-  .features {
+}
+
+.features-b {
     list-style: none;
     padding: 0;
     margin: 0 0 1.5rem 0;
-  }
-  
-  .features li {
+}
+
+.features-b li {
     margin-bottom: 0.5rem;
-  }
-  
-  /* Footer van de kaart (knop + evt. kleine tekst) */
-  .card-footer {
-    margin-top: auto; /* duwt de footer naar de onderkant van de kaart */
+    font-size: 1rem;
+}
+
+.info-icon {
+    cursor: pointer;
+    margin-left: 5px;
+    color: var(--yellow-color);
+    font-size: 1rem;
+}
+
+.card-footer {
+    margin-top: auto;
     text-align: center;
-  }
-  
-  /* Knop */
-  .cta {
-    background: #4838f0;
-    color: #fff;
+}
+
+.cta {
+    background: var(--yellow-color);
+    color: #181830;
     border: none;
-    border-radius: 4px;
-    padding: 0.75rem 1.25rem;
+    border-radius: 6px;
+    padding: 0.75rem 1.5rem;
     font-size: 1rem;
     cursor: pointer;
     transition: background 0.3s;
-  }
-  
-  .cta:hover {
-    background: #372bb7;
-  }
-  
-  /* Kleine notitie onder de knop */
-  .small-note {
+    font-weight: bold;
+}
+
+.cta:hover {
+    background: var(--yellow-color);
+}
+
+.small-note {
     margin-top: 0.5rem;
     font-size: 0.85rem;
-    color: #666;
-  }
-  
-  /* Premium-plan highlight */
-  .highlight {
-    border: 2px solid #4838f0;
-  }
-  
-  /* ===== Responsive breakpoints ===== */
-  
-  /* Tablet- en mobielaanpassingen */
-  @media (max-width: 992px) {
+    color: #bbb;
+}
+
+.highlight {
+    border: 2px solid var(--yellow-color);
+}
+
+.disclaimer {
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: #bbb;
+    max-width: 600px;
+    text-align: center;
+    line-height: 1.4;
+    opacity: 0.8;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media only screen and (min-width: 778px) {
     .pricing-cards {
-      gap: 1rem;
+        gap: 1.5rem;
     }
-  }
-  
-  @media (max-width: 600px) {
     .card {
-      width: 85%;   /* kaarten vullen de volle breedte op mobiel */
-      margin: 0;
+        width: 340px;
     }
-  }
-  
+    .price {
+        font-size: 2.2rem;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .pricing-cards {
+        gap: 2rem;
+    }
+    .card {
+        width: 360px;
+    }
+    .price {
+        font-size: 2.4rem;
+    }
+}
