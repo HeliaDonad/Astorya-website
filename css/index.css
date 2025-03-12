@@ -438,7 +438,6 @@ h1 {
 }
 
 .pricing-section {
-    background: linear-gradient(to bottom, #0f0f23, #1a1a3d);
     color: #fff;
     text-align: center;
     padding: 4rem 1rem;
@@ -449,6 +448,8 @@ h1 {
     font-size: 2.2rem;
     margin-bottom: 2rem;
     font-weight: 600;
+    color: var(--dark-blue-color);
+    font-family: 'SUNROLL', serif;
 }
 
 .pricing-cards {
@@ -459,6 +460,7 @@ h1 {
     flex-wrap: wrap;
     max-width: 1200px;
     margin: 0 auto;
+    font-family: 'Alice', sans-serif;
 }
 
 .card {
@@ -470,7 +472,8 @@ h1 {
     min-height: 450px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-between; 
+    height: 100%; 
     padding: 1.5rem;
     text-align: left;
     border: 1px solid rgba(255, 255, 255, 0.2);
@@ -504,18 +507,7 @@ h1 {
 .features-b li {
     margin-bottom: 0.5rem;
     font-size: 1rem;
-}
-
-.info-icon {
-    cursor: pointer;
-    margin-left: 5px;
-    color: var(--yellow-color);
-    font-size: 1rem;
-}
-
-.card-footer {
-    margin-top: auto;
-    text-align: center;
+    list-style-type: none; 
 }
 
 .cta {
@@ -528,10 +520,20 @@ h1 {
     cursor: pointer;
     transition: background 0.3s;
     font-weight: bold;
+    width: 100%; /* Knoppen nemen de volledige breedte van de container */
+    display: block;
+    text-align: center;
 }
 
 .cta:hover {
     background: var(--yellow-color);
+}
+
+.card-footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .small-note {
@@ -547,14 +549,40 @@ h1 {
 .disclaimer {
     margin-top: 2rem;
     font-size: 0.9rem;
-    color: #bbb;
-    max-width: 600px;
-    text-align: center;
+    color: var(--black-color);
+    text-align: left;
     line-height: 1.4;
     opacity: 0.8;
-    margin-left: auto;
+    margin-left: 0;
     margin-right: auto;
 }
+
+/* Stijl voor het check-icoon */
+.icon {
+    width: 18px;  /* Pas de grootte aan indien nodig */
+    height: 18px;
+    vertical-align: middle;
+    margin-right: 8px;
+    margin-top: -5px;
+    cursor: pointer;
+}
+
+/* Stijl voor het info-icoon */
+.info-icon {
+    width: 14px;
+    height: 14px;
+    vertical-align: middle;
+    margin-left: 6px;
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out;
+    margin-top: -5px;
+}
+
+/* Info-icoon lichte transparantie bij hover */
+.info-icon:hover {
+    opacity: 0.7;
+}
+
 
 @media only screen and (min-width: 778px) {
     .pricing-cards {
