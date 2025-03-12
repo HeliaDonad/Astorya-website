@@ -150,6 +150,11 @@ body {
     margin-right: 8px;
 }
 
+.info-icon {
+    cursor: pointer;
+    margin-top: -3px;
+}
+
 /* Info tooltip */
 .info-text {
     display: none;
