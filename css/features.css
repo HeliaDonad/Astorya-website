@@ -35,8 +35,8 @@ body {
 .feature-twee {
     display: flex;
     flex-direction: row;
-    align-items: top;
-    text-align: left;
+    align-items: center; 
+    justify-content: center; 
     padding: 40px 24px;
 }
 
