@@ -575,13 +575,33 @@ h1 {
     margin-left: 6px;
     cursor: pointer;
     transition: opacity 0.3s ease-in-out;
-    margin-top: -5px;
+    margin-top: -3px;
+    position: relative;
 }
 
-/* Info-icoon lichte transparantie bij hover */
+/* Stijl voor verborgen info-text */
+.info-text {
+    display: none;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.9);
+    color: #181830;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    width: 200px;
+    z-index: 10;
+}
+
+/* Toon het info-tekst vakje wanneer geklikt */
+.info-text.visible {
+    display: block;
+}
+
 .info-icon:hover {
     opacity: 0.7;
 }
+
 
 
 @media only screen and (min-width: 778px) {
