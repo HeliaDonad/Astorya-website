@@ -254,6 +254,199 @@ h1 {
     display: none;
 }
 
+.pricing-section {
+    color: #fff;
+    text-align: center;
+    padding: 4rem 1rem;
+    border-radius: 10px;
+}
+
+.pricing-section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+    font-weight: 600;
+    color: var(--dark-blue-color);
+    font-family: 'SUNROLL', serif;
+}
+
+.pricing-cards {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: 'Alice', sans-serif;
+}
+
+.card {
+    background-color: #181830;
+    color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    width: 320px;
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    height: 100%; 
+    padding: 1.5rem;
+    text-align: left;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.card-header h3 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    /*text-align: center;*/
+}
+
+.price {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: var(--yellow-color);
+    /*text-align: center;*/
+}
+
+.price span {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #bbb;
+    margin-left: 0.25rem;
+}
+
+.features-b {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.5rem 0;
+    line-height: 1.5;
+}
+
+.features-b li {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    list-style-type: none; 
+}
+
+.cta {
+    background: var(--yellow-color);
+    color: #181830;
+    border: none;
+    border-radius: 6px;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-weight: bold;
+    width: 100%; /* Knoppen nemen de volledige breedte van de container */
+    display: block;
+    text-align: center;
+}
+
+.cta:hover {
+    background: var(--yellow-color);
+}
+
+.card-footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.small-note {
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    color: #bbb;
+}
+
+.highlight {
+    border: 2px solid var(--yellow-color);
+}
+
+.disclaimer {
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: var(--black-color);
+    text-align: left;
+    line-height: 1.4;
+    opacity: 0.8;
+}
+
+.pricing-link {
+    display: block; /* Zorgt dat het zich als een blok-element gedraagt */
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: var(--dark-blue-color);
+    text-align: left;
+    text-decoration: none;
+}
+
+.pricing-link:hover {
+    text-decoration: underline;
+}
+
+/* Stijl voor het check-icoon */
+.icon {
+    width: 18px;  /* Pas de grootte aan indien nodig */
+    height: 18px;
+    vertical-align: middle;
+    margin-right: 8px;
+    margin-top: -5px;
+}
+
+/* Stijl voor het info-icoon */
+.info-icon {
+    width: 14px;
+    height: 14px;
+    vertical-align: middle;
+    margin-left: 6px;
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out;
+    margin-top: -3px;
+    position: relative;
+}
+
+/* Stijl voor verborgen info-text */
+.info-text {
+    display: none;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.9);
+    color: #181830;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    width: 200px;
+    z-index: 10;
+}
+
+/* Toon het info-tekst vakje wanneer geklikt */
+.info-text.visible {
+    display: block;
+}
+
+.info-icon:hover {
+    opacity: 0.7;
+}
+
+.info-list {
+    padding: 0;
+    margin: 5px 0;
+    list-style: none;
+}
+
+.info-list li {
+    margin-bottom: 2px; 
+    font-size: 0.85rem;
+}
+
+.cta-start {
+    margin-bottom: 24px;
+}
+
 .faq-container {
     max-width: 800px;
     width: 90%;
@@ -395,6 +588,16 @@ h1 {
         text-align:left;
     }
 
+    .pricing-cards {
+        gap: 1.5rem;
+    }
+    .card {
+        width: 340px;
+    }
+    .price {
+        font-size: 2.2rem;
+    }
+
     .faq-container {
         max-width: 800px;
         width: 90%;
@@ -443,203 +646,7 @@ h1 {
     .features p {
         font-size: 1.4rem;
     }
-}
 
-.pricing-section {
-    color: #fff;
-    text-align: center;
-    padding: 4rem 1rem;
-    border-radius: 10px;
-}
-
-.pricing-section h2 {
-    font-size: 2.2rem;
-    margin-bottom: 2rem;
-    font-weight: 600;
-    color: var(--dark-blue-color);
-    font-family: 'SUNROLL', serif;
-}
-
-.pricing-cards {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 2rem;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    margin: 0 auto;
-    font-family: 'Alice', sans-serif;
-}
-
-.card {
-    background-color: #181830;
-    color: #fff;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-    width: 320px;
-    min-height: 450px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; 
-    height: 100%; 
-    padding: 1.5rem;
-    text-align: left;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-.card-header h3 {
-    font-size: 1.8rem;
-    margin-bottom: 0.5rem;
-    /*text-align: center;*/
-}
-
-.price {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-    color: var(--yellow-color);
-    /*text-align: center;*/
-}
-
-.price span {
-    font-size: 1rem;
-    font-weight: 400;
-    color: #bbb;
-    margin-left: 0.25rem;
-}
-
-.features-b {
-    list-style: none;
-    padding: 0;
-    margin: 0 0 1.5rem 0;
-    line-height: 1.5;
-}
-
-.features-b li {
-    margin-bottom: 0.5rem;
-    font-size: 1rem;
-    list-style-type: none; 
-}
-
-.cta {
-    background: var(--yellow-color);
-    color: #181830;
-    border: none;
-    border-radius: 6px;
-    padding: 0.75rem 1.5rem;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background 0.3s;
-    font-weight: bold;
-    width: 100%; /* Knoppen nemen de volledige breedte van de container */
-    display: block;
-    text-align: center;
-}
-
-.cta:hover {
-    background: var(--yellow-color);
-}
-
-.card-footer {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.small-note {
-    margin-top: 0.5rem;
-    font-size: 0.85rem;
-    color: #bbb;
-}
-
-.highlight {
-    border: 2px solid var(--yellow-color);
-}
-
-.disclaimer {
-    margin-top: 2rem;
-    font-size: 0.9rem;
-    color: var(--black-color);
-    text-align: left;
-    line-height: 1.4;
-    opacity: 0.8;
-    margin-left: 0;
-    margin-right: auto;
-}
-
-/* Stijl voor het check-icoon */
-.icon {
-    width: 18px;  /* Pas de grootte aan indien nodig */
-    height: 18px;
-    vertical-align: middle;
-    margin-right: 8px;
-    margin-top: -5px;
-}
-
-/* Stijl voor het info-icoon */
-.info-icon {
-    width: 14px;
-    height: 14px;
-    vertical-align: middle;
-    margin-left: 6px;
-    cursor: pointer;
-    transition: opacity 0.3s ease-in-out;
-    margin-top: -3px;
-    position: relative;
-}
-
-/* Stijl voor verborgen info-text */
-.info-text {
-    display: none;
-    position: absolute;
-    background: rgba(255, 255, 255, 0.9);
-    color: #181830;
-    padding: 8px 12px;
-    border-radius: 6px;
-    font-size: 0.85rem;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    width: 200px;
-    z-index: 10;
-}
-
-/* Toon het info-tekst vakje wanneer geklikt */
-.info-text.visible {
-    display: block;
-}
-
-.info-icon:hover {
-    opacity: 0.7;
-}
-
-.info-list {
-    padding: 0;
-    margin: 5px 0;
-    list-style: none;
-}
-
-.info-list li {
-    margin-bottom: 2px; 
-    font-size: 0.85rem;
-}
-
-.cta-start {
-    margin-bottom: 24px;
-}
-
-@media only screen and (min-width: 778px) {
-    .pricing-cards {
-        gap: 1.5rem;
-    }
-    .card {
-        width: 340px;
-    }
-    .price {
-        font-size: 2.2rem;
-    }
-}
-
-@media only screen and (min-width: 1024px) {
     .pricing-cards {
         gap: 2rem;
     }
@@ -650,3 +657,5 @@ h1 {
         font-size: 2.4rem;
     }
 }
+
+
