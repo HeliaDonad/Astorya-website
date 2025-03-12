@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Alice', sans-serif;
+    background: var(--gradient-color);
+    margin-top: 60px;
+}
+
+.pricing-section {
+    color: #fff;
+    text-align: center;
+    padding: 4rem 1rem;
+    border-radius: 10px;
+}
+
+.pricing-section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+    font-weight: 600;
+    color: var(--white-color);
+    font-family: 'SUNROLL', serif;
+}
+
+.pricing-cards {
+    display: grid;
+    grid-template-columns: 1fr; /* Mobiel: één kolom */
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: 'Alice', sans-serif;
+}
+
+/* Stijl voor de kaarten */
+.card {
+    background-color: #181830;
+    color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    padding: 1.5rem;
+    text-align: left;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Titel en prijs */
+.card-header h3 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.price {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: var(--yellow-color);
+}
+
+.price span {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #bbb;
+    margin-left: 0.25rem;
+}
+
+/* Functielijst */
+.features-b {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.5rem 0;
+}
+
+.features-b li {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    list-style-type: none;
+}
+
+/* Knop stijl */
+.cta {
+    background: var(--yellow-color);
+    color: #181830;
+    border: none;
+    border-radius: 6px;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-weight: bold;
+    width: 100%; /* Knoppen nemen de volledige breedte */
+    text-align: center;
+}
+
+.cta:hover {
+    background: var(--yellow-color);
+}
+
+.card-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.small-note {
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    color: #bbb;
+}
+
+/* Hoogte consistent houden */
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Disclaimer */
+.disclaimer {
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: var(--black-color);
+    text-align: left;
+    line-height: 1.4;
+    opacity: 0.8;
+}
+
+/* Link stijl */
+.pricing-link {
+    display: block;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: var(--dark-blue-color);
+    text-align: left;
+    text-decoration: none;
+}
+
+.pricing-link:hover {
+    text-decoration: underline;
+}
+
+/* Iconen */
+.icon, .info-icon {
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+/* Info tooltip */
+.info-text {
+    display: none;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.9);
+    color: #181830;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    width: 200px;
+    z-index: 10;
+}
+
+.info-text.visible {
+    display: block;
+}
+
+/* Standaard stijl voor de kaarten */
+.highlight {
+    background-color: #181830;
+    color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    padding: 1.5rem;
+    text-align: left;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: border 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+/* Highlight als de kaart geselecteerd is */
+.highlight.active {
+    border: 2px solid var(--yellow-color);
+}
+
+/* Op desktop: 2 naast elkaar */
+@media only screen and (min-width: 1024px) {
+    .pricing-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
