@@ -452,7 +452,7 @@ h1 {
     width: 90%;
     border-radius: 10px;
     text-align: center;
-    color: white;
+    color: var(--white-color);
     margin-top: 75px;
     margin-bottom: 75px;
 }
@@ -484,7 +484,6 @@ h1 {
     position: relative;
 }
 
-/* Pijltje rechts */
 .faq-question::after {
     content: "▼";
     position: absolute;
@@ -492,21 +491,19 @@ h1 {
     transition: transform 0.3s ease-in-out;
 }
 
-/* Pijltje naar boven wanneer actief */
 .faq-item.active .faq-question::after {
     transform: rotate(180deg);
 }
 
-/* Antwoord-styling (verborgen) */
 .faq-answer {
     background: var(--white-color);
-    color: var(black-color);
+    color: var(--black-color);
     font-family: 'Alice', serif;
     font-size: 1rem;
     line-height: 1.6;
     padding: 10px 12px;
     border-radius: 5px;
-    display: none; /* Standaard verborgen */
+    display: none; 
     margin-top: 8px;
     text-align: left;
 }
