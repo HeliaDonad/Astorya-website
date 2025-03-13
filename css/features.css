@@ -100,7 +100,7 @@ section.feature-twee {
         margin: 24px 64px 48px 64px;
         line-height: 1.5;
     }
-    
+
     .feature img,
     .feature-twee img {
     width: 200px;
@@ -130,4 +130,23 @@ section.feature-twee {
 section.feature-twee {
     justify-content: center;
 }
+}
+
+@media only screen and (max-width: 499px) {
+    .feature,
+    .feature-twee {
+        flex-direction: column !important; 
+        text-align: center; 
+    }
+
+    .feature img,
+    .feature-twee img {
+        order: -1; 
+        margin-bottom: 16px; 
+    }
+
+    .feature-text,
+    .feature-text-twee {
+        text-align: center; 
+    }
 }
