@@ -1,4 +1,4 @@
-body {
+body { 
     font-family: 'Alice', sans-serif;
     background: var(--gradient-color);
     margin: 0;
@@ -7,87 +7,106 @@ body {
 .header-contact h1 {
     color: var(--white-color);
     font-family: "Sunroll", serif;
-    margin: 120px 24px 24px 24px;
+    margin: 120px 24px 24px;
     font-size: 24px;
 }
 
 .header-contact p {
     color: var(--white-color);
-    margin: 24px 24px 48px 24px;
+    margin: 24px 24px 48px;
     line-height: 1.5;
 }
+
+.header-contact {
+    max-width: 490px;
+    margin: 40px auto; /* Centreert het formulier */
+}
+
+/* Contactformulier netjes centreren met gelijke padding links en rechts */
 .contact-form {
-    max-width: 400px;
-    margin: 40px;
+    max-width: 440px;
+    width: 90%; /* Zorgt voor gelijke spatiëring links en rechts */
+    margin: 40px auto; /* Centreert het formulier */
     border-radius: 10px;
     color: var(--white-color);
+    padding: 0 10px; 
 }
-.contact-form h2 {
-    text-align: center;
-    margin-bottom: 32px;
-}
+
+/* Labels */
 .contact-form label {
     font-weight: bold;
     display: block;
-    margin-top: 10px;
+    margin-top: 20px;
 }
-.contact-form input, .contact-form textarea {
-    width: 95%;
+
+/* Inputvelden en knop exact even breed maken */
+.contact-form input,
+.contact-form textarea {
+    width: calc(100% - 20px); 
+    max-width: 100%; 
     padding: 10px;
     margin-top: 5px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
+
+/* Knop styling */
 .contact-form button {
-    width: 100%;
-    padding: 12px;
     background: var(--white-color);
-    opacity: 50%;
+    opacity: 0.5;
     color: #11152A;
     border: none;
     border-radius: 8px;
-    margin-top: 20px;
+    margin-top: 25px;
     cursor: pointer;
+    width: calc(100% - 0px); 
+    max-width: 100%; 
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
 }
+
 .contact-form button:hover {
     background: var(--yellow-color);
-    opacity: 100%;
+    opacity: 1;
 }
 
 @media screen and (min-width: 768px) {
-   
-   
-.header-contact h1 {
-  
-    margin: 120px 64px 24px 64px;
-    font-size: 28px;
-}
+    .header-contact h1 {
+        margin: 120px 88px 24px;
+        font-size: 28px;
+    }
 
-.header-contact p {
-    margin: 0px 64px 24px 64px;
-    line-height: 1.5;
-}
+    .header-contact p {
+        margin: 0px 88px 24px;
+        line-height: 1.5;
+    }
 
-.contact-form {
-    max-width: 800px; /* Maak het breder */
-    width: 80%; /* Zorg dat het schaalbaar is */
-    margin: 64px auto;
-}
+    .header-contact {
+        max-width: 8000px;
+    }
 
+    .contact-form {
+        max-width: 800px;
+        width: 80%;
+        margin: 64px auto;
+        padding: 0 20px; /* Gelijke spatiëring links en rechts */
+        overflow: hidden; /* Voorkomt horizontale scroll */
+    }
 
     .contact-form form {
         max-width: 800px;
-        width: 100%;
         display: flex;
         flex-wrap: wrap;
-        gap: 24px;
+        gap: 10px;
+        flex-direction: column; 
+        margin-top: -15px;
     }
 
     .contact-form label {
         width: 100%;
     }
 
-    /* Zet de naamvelden naast elkaar */
     .name-group,
     .contact-group {
         display: flex;
@@ -95,56 +114,47 @@ body {
         width: 100%;
     }
 
-    #firstname, #lastname,
-    #email, #phone {
+    .name-group div,
+    .contact-group div {
         flex: 1;
         width: 100%;
     }
 
+    /* Breder message veld */
     textarea#message {
-        width: 670px;
-    }
-    /* Zorg dat message en de knop volledige breedte nemen */
-    .contact-form button {
-        width: 100%;
-    }
-    
-    .contact-form div:last-child {
-        width: 100%;
-    }
-    .contact-form button {
-        width: 100%;
-    }
-    
-
-  
-    input#firstname,
-    input#lastname,
-    input#email,
-    input#phone {
-        width: 300px;
+        width: 97%;
+        height: 180px; /* Maakt het tekstveld langer */
     }
 
+    /* Knop even breed als de hele form */
+    .contact-form button {
+        width: 100%;
+        max-width: 100%; /* Voorkomt afwijkende breedtes */
+    }
 
 }
-
 
 @media only screen and (min-width: 1024px) {
+    .header-contact h1 {
+        margin: 120px auto 24px;
+        font-size: 32px;
+        max-width: 700px;
+    }
 
-     
-.header-contact h1 {
-  
-    margin: 120px 120px 24px 400px;
-    font-size: 32px;
-}
+    .header-contact p {
+        margin: 0px auto 24px;
+        max-width: 700px;
+    }
 
-.header-contact p {
-    margin: 0px 120px 24px 400px;
-}
+    .contact-form {
+        max-width: 700px;
+        width: 100%;
+        padding: 0 20px; /* Zorgt voor gelijke padding links en rechts */
+        overflow: hidden; /* Extra beveiliging tegen horizontale scroll */
+    }
 
-
-.contact-form {
-    max-width: 700px; /* Maak het breder */
-   
-}
+    .contact-form form {
+        max-width: 700px;
+        width: 100%;
+    }
 }
