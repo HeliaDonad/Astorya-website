@@ -52,21 +52,18 @@ h1 {
 
 .white-section {
     background: var(--white-color);
-    width: 100%;
-    min-height: 100vh;
     display: flex;
     flex-direction: column; 
     align-items: center;
     justify-content: center;
-    gap: 50px; 
 }
 
 .MV-container, .story {
     max-width: 800px;
     width: 90%;
     text-align: center;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 60px;
+    margin-bottom: 60px;
 }
 
 .MV-container{
@@ -78,13 +75,13 @@ h1 {
 }
 
 .mission{
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 .mission h2, .vision h2, .story h2 {
     font-family: 'Sunroll', serif;
     font-size: 1.8rem;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
 }
 
 .mission p, .vision p, .story p {
@@ -189,4 +186,8 @@ h1 {
 
 }
 
-
+@media only screen and (max-width: 499px){
+    h1 {
+        font-size: 2rem;
+    }
+}

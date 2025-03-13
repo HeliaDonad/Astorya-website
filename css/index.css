@@ -655,4 +655,19 @@ h1 {
     }
 }
 
+@media only screen and (max-width: 499px){
+    .features article div {
+        padding: 0px 0px;
+        margin-top: 20px;
+    }
+
+    .feature-buttons {
+        padding: 0 0px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+}
+
 
