@@ -37,7 +37,9 @@
       </section>
 
     <section class="contact-form">
-        <form action="#" method="POST">
+        <form action="https://api.web3forms.com/submit" method="POST" id="contactForm" onsubmit="return submitForm(event)">
+            <!-- Replace with your Access Key -->
+            <input type="hidden" name="access_key" value="beec4a55-2da7-45c1-a0dd-ce1ef2e56b06">
             <div class="name-group">
                 <div>
                     <label for="firstname">First Name</label>
@@ -48,7 +50,6 @@
                     <input type="text" id="lastname" name="lastname" placeholder="Doe" required>
                 </div>
             </div>
-        
             <div class="contact-group">
                 <div>
                     <label for="email">Email Address</label>
@@ -115,5 +116,6 @@
     </footer>
     
     <script src="../js/active-nav.js"></script>
+    <script src="../js/contact-form.js"></script>
     </body>
     </html>

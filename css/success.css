@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Alice', sans-serif;
+    background: var(--gradient-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--white-color);
+}
+
+/* Zorgt ervoor dat er geen extra witruimte is */
+* {
+    box-sizing: border-box;
+}
+
+/* Succesbericht styling */
+.success-container {
+    max-width: 400px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+/* Titel styling */
+.success-container h1 {
+    font-family: "Sunroll", serif;
+    color: var(--white-color);
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+/* Paragraaf styling */
+.success-container p {
+    font-size: 16px;
+    margin-top: 5px;
+    line-height: 1.5;
+}
+
+/* Link styling */
+.success-container a {
+    color: var(--yellow-color);
+    text-decoration: underline;
+}
+
+.success-container a:hover {
+    color: var(--white-color);
+}
+
+/* Redirect melding */
+.redirect {
+    font-size: 14px;
+    color: var(--white-color);
+    margin-top: 20px;
+    font-style: italic;
+}
+
+/* Animatie */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
