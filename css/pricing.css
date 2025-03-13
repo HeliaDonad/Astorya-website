@@ -49,7 +49,7 @@ body {
 
 /* Titel en prijs */
 .card-header h3 {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     margin-bottom: 0.5rem;
 }
 
@@ -203,11 +203,19 @@ body {
     .pricing-section h2 {
         font-size: 2rem;
     }
+
+    .card-header h3 {
+        font-size: 1.6rem;
+    }
 }
 
 /* Op desktop: 2 naast elkaar */
 @media only screen and (min-width: 1024px) {
     .pricing-section h2 {
         font-size: 2.2rem;
+    }
+
+    .card-header h3 {
+        font-size: 1.8rem;
     }
 }

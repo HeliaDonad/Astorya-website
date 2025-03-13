@@ -40,7 +40,7 @@ html, body {
 
 /* Paragraaf styling */
 .success-container p {
-    font-size: 16px;
+    font-size: 14px;
     margin-top: 5px;
     line-height: 1.5;
 }
@@ -57,7 +57,7 @@ html, body {
 
 /* Redirect melding */
 .redirect {
-    font-size: 14px;
+    font-size: 12px;
     color: var(--white-color);
     margin-top: 20px;
     font-style: italic;
@@ -75,3 +75,38 @@ html, body {
     }
 }
 
+@media only screen and (min-width: 778px) {
+    .success-container {
+        max-width: 600px;
+    }
+
+    .success-container h1 {
+        font-size: 28px;
+    }
+
+    .success-container p {
+        font-size: 16px;   
+    }  
+
+    .redirect {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .success-container {
+        max-width: 800px;
+    }
+
+    .success-container h1 {
+        font-size: 32px;
+    }
+
+    .success-container p {
+        font-size: 18px;   
+    }  
+
+    .redirect {
+        font-size: 16px;
+    }
+}
