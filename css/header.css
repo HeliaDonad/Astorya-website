@@ -127,8 +127,12 @@ header {
 
   /* Hover effect */
 .subnav a:hover {
-    color: var(--yellow-color);
-    text-decoration: underline;
+    /*color: var(--yellow-color);
+    text-decoration: underline;*/
+    /*text-decoration: underline;*/
+    text-underline-offset: 4px; 
+    transform: translateY(-2px); 
+    transition: transform 0.2s ease-in-out /*, text-decoration 0.2s ease-in-out;*/
 }
 
 .subnav a.active {
