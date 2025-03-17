@@ -21,11 +21,11 @@ body {
 
 h1 {
     font-family: 'Sunroll', sans-serif;
-    font-size: 2.4rem;
+    font-size: var(--font-h1);
     color: var(--white-color);
     position: absolute;
     bottom: 5%;
-    left: 0%;
+    left: 2%;
     text-align: left;
     line-height: 1.6;
     font-weight: 500;
@@ -80,13 +80,13 @@ h1 {
 
 .mission h2, .vision h2, .story h2 {
     font-family: 'Sunroll', serif;
-    font-size: 1.8rem;
+    font-size: var(--font-h2);
     margin-bottom: 15px;
 }
 
 .mission p, .vision p, .story p {
     font-family: 'Alice', serif;
-    font-size: 1rem;
+    font-size: var(--font-body);
     line-height: 1.6;
     font-weight: normal;
     text-align: justify;
@@ -107,7 +107,7 @@ h1 {
 
 .team h2 {
     font-family: 'Sunroll', serif;
-    font-size: 1.8rem;
+    font-size: var(--font-h2);
     color: var(--black-color);
     margin-bottom: 50px;
 }
@@ -144,50 +144,50 @@ h1 {
 
 .team-member h3 {
     font-family: 'Alice', serif;
-    font-size: 1.6rem;
+    font-size: var(--font-h3);
     margin: 20px 0 10px;
     color: var(--dark-blue-color);
 }
 
 .team-member p {
     font-family: 'Alice', serif;
-    font-size: 1rem;
+    font-size: var(--font-body);
     color: #555;
 }
 
 @media only screen and (min-width: 778px) {
     h1 {
-        font-size: 3rem;
+        font-size: var(--font-h1);
         margin-right: 160px;
     }
 
     .mission h2, .vision h2, .story h2, .team h2 {
-        font-size: 2rem;
+        font-size: var(--font-h2);
     }
 
     .mission p, .vision p, .story p {
-        font-size: 1.2rem;
+        font-size: var(--font-body);;
     }
 }
 
 @media only screen and (min-width: 1024px) {
     h1 {
-        font-size: 3.6rem;
+        font-size: var(--font-h1);
         margin-right: 400px;
     }
 
     .mission h2, .vision h2, .story h2, .team h2 {
-        font-size: 2.2rem;
+        font-size:var(--font-h2);
     }
 
     .mission p, .vision p, .story p {
-        font-size: 1.4rem;
+        font-size:var(--font-body);
     }
 
 }
 
 @media only screen and (max-width: 499px){
     h1 {
-        font-size: 2rem;
+        font-size: var(--font-h1);
     }
 }

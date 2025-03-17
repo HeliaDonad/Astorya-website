@@ -19,11 +19,11 @@ body {
 
 h1 {
     font-family: 'Sunroll', sans-serif;
-    font-size: 2.4rem;
+    font-size: var(--font-h1);
     color: var(--white-color);
     position: absolute;
     bottom: 5%;
-    left: 0%;
+    left: 2%;
     text-align: left;
     line-height: 1.6;
     font-weight: 500;
@@ -114,7 +114,7 @@ h1 {
 /* Eerste tekst links */
 .welcome-top p {
     font-family: 'Alice', serif;
-    font-size: 1.6rem;
+    font-size: var(--font-h3);;
     font-weight: normal;
     margin: 0;
     text-align: left;
@@ -132,7 +132,7 @@ h1 {
 
 .welcome-bottom p {
     font-family: 'Alice', serif;
-    font-size: 1.6rem;
+    font-size: var(--font-h3);
     font-weight: normal;
     margin: 0;
     text-align: center;
@@ -149,13 +149,13 @@ h1 {
 
 .manifesto h2 {
     font-family: 'Sunroll', serif;
-    font-size: 1.8rem;
+    font-size: var(--font-h2);
     margin-bottom: 25px;
 }
 
 .manifesto p {
     font-family: 'Alice', serif;
-    font-size: 1rem;
+    font-size: var(--font-body);
     line-height: 1.6;
     font-weight: normal;
     color: #333;
@@ -179,7 +179,7 @@ h1 {
 
 .features h3 {
     font-family: 'Sunroll', serif;
-    font-size: 1.6rem;
+    font-size: var(--font-h3);
     margin-bottom: 25px;
     color: var(--white-color);
     margin-top: 50px;
@@ -187,7 +187,7 @@ h1 {
 
 .features p {
     font-family: 'Alice', serif;
-    font-size: 1rem;
+    font-size: var(--font-body);
     line-height: 1.6;
     font-weight: normal;
     color: var(--white-color);
@@ -262,7 +262,7 @@ h1 {
 }
 
 .pricing-section h2 {
-    font-size: 1.8rem;
+    font-size: var(--font-h2);
     margin-bottom: 2rem;
     font-weight: 600;
     color: var(--dark-blue-color);
@@ -297,7 +297,7 @@ h1 {
 }
 
 .card-header h3 {
-    font-size: 1.8rem;
+    font-size: var(--font-h3);
     margin-bottom: 0.5rem;
     /*text-align: center;*/
 }
@@ -336,7 +336,7 @@ h1 {
     border: none;
     border-radius: 6px;
     padding: 0.75rem 1.5rem;
-    font-size: 1rem;
+    font-size: var(--font-body);
     cursor: pointer;
     transition: background 0.3s;
     font-weight: bold;
@@ -459,7 +459,7 @@ h1 {
 
 .faq h2 {
     font-family: 'Sunroll', serif;
-    font-size: 1.8rem;
+    font-size: var(--font-h2);
     margin-bottom: 25px;
     color: var(--white-color);
 }
@@ -531,16 +531,16 @@ h1 {
 
 @media only screen and (min-width: 778px) {
     h1 {
-        font-size: 3rem;
+        font-size: var(--font-h1);
         margin-right: 160px;
     }
 
     .welcome-top p {
-        font-size: 2.2rem;
+        font-size: var(--font-h3);;
     }
 
     .welcome-bottom p {
-        font-size: 2.2rem;
+        font-size: var(--font-h3);
     }
 
     .welcome-logo {
@@ -552,19 +552,19 @@ h1 {
     }
 
     .manifesto h2 {
-        font-size: 2rem;
+        font-size: var(--font-h2);
     }
 
     .manifesto p {
-        font-size: 1.2rem;
+        font-size: var(--font-body);
     }
 
     .features h3 {
-        font-size: 1.8rem;
+        font-size: var(--font-h3);
     }
 
     .features p {
-        font-size: 1.2rem;
+        font-size: var(--font-body);
     }
 
     .features article {
@@ -586,7 +586,7 @@ h1 {
     }
 
     .pricing-section h2 {
-        font-size: 2rem;
+        font-size: var(--font-h2);
     }
 
     .pricing-cards {
@@ -608,16 +608,16 @@ h1 {
 
 @media only screen and (min-width: 1024px) {
     h1 {
-        font-size: 3.6rem;
+        font-size: var(--font-h1);
         margin-right: 400px;
     }
 
     .welcome-top p {
-        font-size: 2.8rem;
+        font-size: var(--font-h2);
     }
 
     .welcome-bottom p {
-        font-size: 2.8rem;
+        font-size: var(--font-h2);
     }
 
     .welcome-logo {
@@ -625,11 +625,11 @@ h1 {
     }
 
     .manifesto h2 {
-        font-size: 2.2rem;
+        font-size: var(--font-h2);
     }
 
     .manifesto p {
-        font-size: 1.4rem;
+        font-size: var(--font-body);
     }
 
     .features article {
@@ -641,15 +641,15 @@ h1 {
     }
 
     .features h2 {
-        font-size: 2rem;
+        font-size: var(--font-h2);
     }
 
     .features p {
-        font-size: 1.4rem;
+        font-size: var(--font-body);
     }
 
     .pricing-section h2 {
-        font-size: 2.2rem;
+        font-size: var(--font-h2);
     }
 
     .pricing-cards {
@@ -659,7 +659,7 @@ h1 {
         width: 360px;
     }
     .price {
-        font-size: 2.4rem;
+        font-size: var(--font-h2);
     }
 }
 
@@ -674,7 +674,7 @@ h1 {
     }
 
     h1 {
-        font-size: 2rem;
+        font-size: var(--font-h1);
     }
 
     .white-section {
@@ -682,5 +682,3 @@ h1 {
         min-height: auto;
     }
 }
-
-
