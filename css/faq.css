@@ -38,7 +38,7 @@ body {
 
 .faq h2 {
     font-family: 'Sunroll', serif;
-    font-size: 1.8rem;
+    font-size: var(--font-h2);
     margin-bottom: 25px;
     color: var(--white-color);
 }
@@ -101,13 +101,14 @@ body {
 
 .contact-container h3 {
     font-family: 'Sunroll', serif;
-    font-size: 1.6rem;
+    font-size: var(--font-h3);
     margin-bottom: 15px;
 }
 
 .contact-container p {
     font-family: 'Alice', serif;
-    font-size: 1rem;
+    font-size: var(--font-boy);
+    line-height: 1.6;
     margin-bottom: 25px;
 }
 
@@ -125,7 +126,7 @@ body {
 }
 
 #email-text {
-    font-size: 1rem;
+    font-size: var(--font-body);
     color: var(--white-color);;
     margin-right: 10px;
 }
@@ -133,7 +134,7 @@ body {
 .copy-btn {
     background: var(--white-color);;
     color: var(--black-color);;
-    font-size: 0.9rem;
+    font-size: var(--font-small);
     border: none;
     padding: 5px 10px;
     border-radius: 3px;
@@ -153,7 +154,7 @@ body {
     background: rgba(255, 255, 255, 0.9);
     color: var(--black-color);
     font-family: 'Alice', serif;
-    font-size: 1rem;
+    font-size: var(--font-body);
     padding: 10px 20px;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);

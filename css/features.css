@@ -82,7 +82,7 @@ body {
 .feature-text,
 .feature-text-twee {
     max-width: 600px;
-    font-size: 16px;
+    font-size: var(--font-body);
     text-align: left;
 }
 
@@ -128,12 +128,12 @@ section.feature-twee {
 
     .feature-text h2,
     .feature-text-twee h2 {
-        font-size: 32px;
+        font-size: var(--font-h2);
     }
 
     .feature-text p,
     .feature-text-twee p {
-        font-size: 18px;
+        font-size: var(--font-body);
     }
 
     .feature-text,

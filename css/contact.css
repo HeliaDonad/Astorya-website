@@ -8,7 +8,7 @@ body {
     color: var(--white-color);
     font-family: "Sunroll", serif;
     margin: 120px 24px 24px;
-    font-size: 24px;
+    font-size: var(--font-h1);
 }
 
 .header-contact p {
@@ -74,7 +74,7 @@ body {
 @media screen and (min-width: 768px) {
     .header-contact h1 {
         margin: 120px 88px 24px;
-        font-size: 28px;
+        font-size: var(--font-h1);
     }
 
     .header-contact p {
@@ -137,7 +137,7 @@ body {
 @media only screen and (min-width: 1024px) {
     .header-contact h1 {
         margin: 120px auto 24px;
-        font-size: 32px;
+        font-size: var(--font-h1);
         max-width: 700px;
     }
 
