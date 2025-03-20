@@ -19,5 +19,6 @@ TO DO:
 
 Later:
 - Video toevoegen
-- foto's ABout us aanpassen
+- foto's About us aanpassen
 - link nr google play & app store
+

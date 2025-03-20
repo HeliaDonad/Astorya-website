@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /success.html
+Disallow: /cart/
+Disallow: /checkout/
+Disallow: /wp-admin/  # Alleen als je WordPress gebruikt
+
+Sitemap: https://astorya.be/sitemap.xml
