@@ -11,6 +11,10 @@ function submitForm(event) {
     .then(response => {
         if (response.ok) {
             form.reset();
+
+             // Voeg dit Hotjar event toe voordat je redirect
+             hj('event', 'Form Submitted');
+             
             window.location.href = 'success.html'; 
         } else {
             alert('Something went wrong. Please try again.');
