@@ -226,7 +226,7 @@ h1 {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    padding: 0 20px;
+    padding: 0 0px;
     box-sizing: border-box;
 }
 
@@ -378,14 +378,28 @@ h1 {
 .pricing-link {
     display: block; /* Zorgt dat het zich als een blok-element gedraagt */
     margin-top: 2rem;
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: var(--dark-blue-color);
     text-align: left;
     text-decoration: none;
 }
 
+.pricing-link::after {
+    content: ' ›'; /* spatie vóór het pijltje */
+    font-size: 1.1rem;
+    transition: transform 0.3s ease;
+    top: 1;
+    margin-left: 5px;
+    position: absolute;
+}
+
 .pricing-link:hover {
     text-decoration: underline;
+    cursor: pointer;
+}
+
+.pricing-link:hover::after {
+    transform:translateX(2px); 
 }
 
 /* Stijl voor het check-icoon */

@@ -43,6 +43,6 @@ function copyEmail() {
 }
 
 function redirectToFAQ() {
-    window.location.href = "../pagina's/faq.html"; // Redirect naar de FAQ pagina
+    window.location.href = "../paginas/faq.html"; // Redirect naar de FAQ pagina
 }
 

@@ -50,26 +50,32 @@ body {
     border-radius: 5px;
 }
 
-/* Knop styling */
+/* Standaard knop (uitgeschakeld, velden niet ingevuld) */
 .contact-form button {
     background: var(--white-color);
     opacity: 0.5;
     color: #11152A;
     border: none;
-    border-radius: 8px;
-    margin-top: 25px;
-    cursor: pointer;
-    width: calc(100% - 0px); 
-    max-width: 100%; 
-    padding: 10px;
     border-radius: 5px;
+    margin-top: 25px;
+    cursor: not-allowed;
+    width: 100%;
+    max-width: 100%;
+    padding: 10px;
     margin-bottom: 20px;
+    transition: background 0.3s ease, opacity 0.3s ease;
 }
 
-.contact-form button:hover {
+/* Als ALLE velden zijn ingevuld: knop is actief/geel */
+.contact-form button:enabled {
     background: var(--yellow-color);
     opacity: 1;
+    cursor: pointer;
 }
+
+/*.contact-form button:enabled:hover {
+    filter: brightness(1.1);
+}*/
 
 @media screen and (min-width: 768px) {
     .header-contact h1 {

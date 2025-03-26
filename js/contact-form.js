@@ -12,10 +12,12 @@ function submitForm(event) {
         if (response.ok) {
             form.reset();
 
-             // Voeg dit Hotjar event toe voordat je redirect
-             hj('event', 'Form Submitted');
-             
-            window.location.href = 'success.html'; 
+            // Hotjar event
+            if (typeof hj === 'function') {
+                hj('event', 'Form Submitted');
+            }
+
+            window.location.href = 'success.html';
         } else {
             alert('Something went wrong. Please try again.');
         }
@@ -25,3 +27,21 @@ function submitForm(event) {
         alert('Something went wrong. Please try again.');
     });
 }
+
+// ✅ Activatie van de knop als alle velden zijn ingevuld
+document.addEventListener('DOMContentLoaded', function () {
+    const form = document.getElementById('contactForm');
+    const button = form.querySelector('button[type="submit"]');
+    const requiredFields = form.querySelectorAll('input[required], textarea[required]');
+
+    function checkFieldsFilled() {
+        const allFilled = [...requiredFields].every(field => field.value.trim() !== '');
+        button.disabled = !allFilled;
+    }
+
+    requiredFields.forEach(field => {
+        field.addEventListener('input', checkFieldsFilled);
+    });
+
+    checkFieldsFilled(); // controle bij paginalaad
+});
