@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://astorya.be/</loc>
+  <lastmod>2025-03-24T21:52:56+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://astorya.be/index.html</loc>
+  <lastmod>2025-03-24T21:52:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://astorya.be/paginas/features.html</loc>
+  <lastmod>2025-03-24T21:52:35+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://astorya.be/paginas/pricing.html</loc>
+  <lastmod>2025-03-24T21:52:35+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://astorya.be/paginas/faq.html</loc>
+  <lastmod>2025-03-24T21:52:35+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://astorya.be/paginas/about.html</loc>
+  <lastmod>2025-03-24T21:52:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://astorya.be/paginas/contact.html</loc>
+  <lastmod>2025-03-24T21:52:34+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+
+</urlset>
