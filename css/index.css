@@ -689,10 +689,6 @@ h1 {
         font-size: 1.8rem;
     }
 
-    h2 {
-        font-size: var(--font-h2);
-    }
-
     .white-section {
         width: auto;
         min-height: auto;
