@@ -92,6 +92,7 @@ h1 {
     text-align: center;
     padding: 0 10%;
     margin: 0 auto; 
+    margin-left: 10%;
 }
 
 .welcome-top {
@@ -106,9 +107,9 @@ h1 {
 /* Logo Styling */
 .welcome-logo {
     width: 75px;
-    margin-left: 12px;
+    margin-left: 6px;
     position: relative;
-    top: 6px;
+    top: 7px;
 }
 
 /* Eerste tekst links */
@@ -183,6 +184,7 @@ h1 {
     margin-bottom: 25px;
     color: var(--white-color);
     margin-top: 50px;
+    line-height: 1.5;
 }
 
 .features p {
@@ -549,18 +551,6 @@ h1 {
         margin-right: 160px;
     }
 
-    .welcome-top p {
-        font-size: var(--font-h3);;
-    }
-
-    .welcome-bottom p {
-        font-size: var(--font-h3);
-    }
-
-    .welcome-logo {
-        width: 80px;
-    }
-
     .welcome {
         max-width: 1800px; 
     }
@@ -618,6 +608,19 @@ h1 {
         width: 90%;
     }
 
+    .welcome-top p {
+        font-size: var(--font-h2);
+    }
+
+    .welcome-bottom p {
+        font-size: var(--font-h2);
+    }
+
+    .welcome-logo {
+        width: 100px;
+        top: 10px;
+    }
+
 }
 
 @media only screen and (min-width: 1024px) {
@@ -635,7 +638,8 @@ h1 {
     }
 
     .welcome-logo {
-        width: 100px;
+        width: 120px;
+        top: 12px;
     }
 
     .manifesto h2 {

@@ -59,6 +59,7 @@ body {
 .feature-text-twee h2 {
     font-family: "Sunroll", serif;
     margin: 24px 12px;
+    line-height: 1.5;
 }
 
 .feature-text-twee h2,
