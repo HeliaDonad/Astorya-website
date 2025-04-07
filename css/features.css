@@ -19,6 +19,7 @@ body {
     color: var(--white-color);
     font-family: "Sunroll", serif;
     margin: 120px 24px 24px 24px;
+    line-height: 1.5;
 }
 
 .header p {
@@ -148,5 +149,7 @@ section.feature-twee {
 }
 
 @media only screen and (max-width: 499px) {
-
+    h1 {
+        font-size: var(--font-h1);
+    }
 }

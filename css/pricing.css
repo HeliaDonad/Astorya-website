@@ -220,3 +220,13 @@ body {
         font-size: var(--font-h2);
     }
 }
+
+@media only screen and (max-width: 499px) {
+    .pricing-section h1 {
+        font-size: var(--font-h1);
+    }
+
+    .card-header h2 {
+        font-size: var(--font-h2);
+    }
+}

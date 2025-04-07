@@ -36,11 +36,12 @@ body {
     margin-top: 125px;
 }
 
-.faq h2 {
+.faq h1 {
     font-family: 'Sunroll', serif;
-    font-size: var(--font-h2);
+    font-size: var(--font-h1);
     margin-bottom: 25px;
     color: var(--white-color);
+    line-height: 1.5;
 }
 
 .faq-items {
@@ -182,6 +183,14 @@ body {
 @media only screen and (min-width: 1024px) {
     
 }
+
+@media only screen and (max-width: 499px) {
+    .faq h1 {
+        font-size: 1.5rem;
+    }
+}
+
+
 
 
 

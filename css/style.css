@@ -10,7 +10,7 @@
 /* Basis tekstgroottes */
   --font-body: 1rem; /* 16px */
   --font-small: 0.875rem; /* 14px */
-  --font-h1: 2rem; /* 32px */
+  --font-h1: 1.8rem; /* 32px */
   --font-h2: 1.6rem; /* 28px */
   --font-h3: 1.125rem; /* 24px */
   --font-header: 1.2rem; 
@@ -40,5 +40,13 @@
     --font-h3: 1.4rem; /* 32px */
     --font-button: 1.25rem; /* 20px */
     --font-size-intro: 3rem
+  }
+}
+
+@media (max-width: 499px){
+  :root{
+    --font-h1: 1.6rem; 
+    --font-h2: 1.4rem; 
+    --font-h3: 1rem; 
   }
 }
