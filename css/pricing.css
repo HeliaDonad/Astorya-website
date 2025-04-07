@@ -93,6 +93,7 @@ body {
     font-weight: bold;
     width: 100%; /* Knoppen nemen de volledige breedte */
     text-align: center;
+    font-family: "Alice", sans-serif;
 }
 
 .cta:hover {

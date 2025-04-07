@@ -11,20 +11,22 @@
   --font-body: 1rem; /* 16px */
   --font-small: 0.875rem; /* 14px */
   --font-h1: 2rem; /* 32px */
-  --font-h2: 1.8rem; /* 28px */
-  --font-h3: 1.5rem; /* 24px */
+  --font-h2: 1.6rem; /* 28px */
+  --font-h3: 1.125rem; /* 24px */
   --font-header: 1.2rem; 
   --line-height: 1.6;
+  --font-size-intro: 2.2rem
 }
 
 @media (min-width: 778px) {
   :root {
     --font-body: 1.125rem; /* 18px */
     --font-small: 1rem; /* 16px */
-    --font-h1: 1.5rem; /* 40px */
-    --font-h2: 2rem; /* 32px */
-    --font-h3: 1.75rem; /* 28px */
+    --font-h1: 2.2rem; /* 40px */
+    --font-h2: 1.8rem; /* 32px */
+    --font-h3: 1.25rem; /* 28px */
     --font-button: 1.125rem; /* 18px */
+    --font-size-intro: 2.8rem
   }
 }
 
@@ -33,9 +35,10 @@
   :root {
     --font-body: 1.25rem; /* 20px */
     --font-small: 1.125rem; /* 18px */
-    --font-h1: 3.8rem; /* 48px */
-    --font-h2: 2.2rem; /* 40px */
-    --font-h3: 2rem; /* 32px */
+    --font-h1: 2.4rem; /* 48px */
+    --font-h2: 2rem; /* 40px */
+    --font-h3: 1.4rem; /* 32px */
     --font-button: 1.25rem; /* 20px */
+    --font-size-intro: 3rem
   }
 }
