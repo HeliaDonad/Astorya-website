@@ -180,7 +180,7 @@ h1 {
     font-size: var(--font-h3);
     margin-bottom: 25px;
     color: var(--white-color);
-    margin-top: 50px;
+    margin-top: 25px;
     line-height: 1.5;
 }
 
@@ -219,14 +219,17 @@ h1 {
 }
 
 .feature-buttons {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-180%);
+    position: static;
+    transform: none;
+    justify-content: center;
     display: flex;
-    justify-content: space-between;
     width: 100%;
     padding: 0 0px;
     box-sizing: border-box;
+    margin-top: -30px;
+    position: static;
+    transform: none;
+    justify-content: center;
 }
 
 .feature-buttons button {
@@ -577,8 +580,12 @@ h1 {
     }
 
     .feature-buttons {
+        position: absolute;
+        top: 50%;
+        justify-content: space-between;
         transform: translateY(-50%);
         box-sizing: border-box;
+        margin-top: auto;
     }
 
     .features article div {
@@ -699,7 +706,7 @@ h1 {
     }
 
     .feature-buttons {
-        top: 47%;
+        margin-top: 0px;
     }
     
     .feature-buttons button {
@@ -711,6 +718,4 @@ h1 {
     .features article { 
         padding: 10px;
     }
-    
-    
 }
