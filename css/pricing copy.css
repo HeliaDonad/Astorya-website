@@ -223,6 +223,10 @@ body {
         font-size: var(--font-h3);
     }
 
+    .pricing-cards {
+        grid-template-columns: repeat(3, 1fr); /* Zet 3 kolommen */
+    }
+
     .features-b li {
         font-size: var(--font-small);
     }
