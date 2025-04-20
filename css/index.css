@@ -385,25 +385,34 @@ h1 {
 }
 
 .pricing-link {
-    display: block; /* Zorgt dat het zich als een blok-element gedraagt */
+    display: block; /* blijft links uitgelijnd zoals jij wil */
     margin-top: 2rem;
     font-size: 1rem;
-    color: var(--dark-blue-color);
-    text-align: left;
+    color: var(--white-color); /* wit */
+    background-color: var(--dark-blue-color); /* blauwe knop */
+    padding: 12px 40px 12px 24px;
+    border-radius: 6px;
     text-decoration: none;
+    font-family: 'Alice', serif;
+    font-weight: normal;
+    position: relative;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .pricing-link::after {
     content: ' ›'; /* spatie vóór het pijltje */
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     transition: transform 0.3s ease;
-    top: 1;
-    margin-left: 5px;
+    top: 10px;
+    margin-left: 10px;
     position: absolute;
 }
 
 .pricing-link:hover {
-    text-decoration: underline;
+    background-color: #1b2140;
+    text-decoration: none;
     cursor: pointer;
 }
 
