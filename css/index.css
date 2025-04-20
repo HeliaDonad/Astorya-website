@@ -385,11 +385,11 @@ h1 {
 }
 
 .pricing-link {
-    display: block; /* blijft links uitgelijnd zoals jij wil */
+    display: block; 
     margin-top: 2rem;
     font-size: 1rem;
-    color: var(--white-color); /* wit */
-    background-color: var(--dark-blue-color); /* blauwe knop */
+    color: var(--white-color);
+    background-color: var(--dark-blue-color); 
     padding: 12px 40px 12px 24px;
     border-radius: 6px;
     text-decoration: none;
@@ -397,12 +397,12 @@ h1 {
     font-weight: normal;
     position: relative;
     width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
+    /*margin-left: auto;
+    margin-right: auto;*/
 }
 
 .pricing-link::after {
-    content: ' ›'; /* spatie vóór het pijltje */
+    content: ' ›'; 
     font-size: 1.2rem;
     transition: transform 0.3s ease;
     top: 10px;
@@ -422,7 +422,7 @@ h1 {
 
 /* Stijl voor het check-icoon */
 .icon {
-    width: 18px;  /* Pas de grootte aan indien nodig */
+    width: 18px;  
     height: 18px;
     vertical-align: middle;
     margin-right: 8px;
