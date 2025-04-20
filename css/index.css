@@ -397,8 +397,8 @@ h1 {
     font-weight: normal;
     position: relative;
     width: fit-content;
-    /*margin-left: auto;
-    margin-right: auto;*/
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .pricing-link::after {
