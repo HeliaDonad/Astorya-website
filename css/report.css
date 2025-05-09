@@ -1,0 +1,159 @@
+body {
+    font-family: 'Alice', serif;
+    background: var(--white-color);
+    color: var(--dark-blue-color);
+    margin: 0;
+    padding: 0;
+  }
+  
+  .report-page {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  
+  h1 {
+    font-family: 'SUNROLL', serif;
+    font-size: var(--font-h1);
+    margin-bottom: 16px;
+    color: var(--dark-blue-color);
+  }
+  
+  h2 {
+    font-family: 'SUNROLL', serif;
+    font-size: var(--font-h2);
+    margin: 40px 0 16px;
+    color: var(--dark-blue-color);
+  }
+  
+  p {
+    font-family: 'Alice', serif;
+    font-size: var(--font-body);
+    line-height: 1.6;
+    margin-bottom: 16px;
+    text-align: justify;
+    color: #333;
+  }
+  
+  ul {
+    text-align: left;
+    margin-bottom: 32px;
+    padding-left: 20px;
+    color: #333;
+  }
+  
+  ul li {
+    margin-bottom: 10px;
+    font-size: var(--font-body);
+    line-height: 1.5;
+  }
+  
+  /* FORMULIER */
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    width: 100%;
+  }
+  
+  form label {
+    width: 100%;
+    max-width: 480px;
+    text-align: left;
+    font-weight: bold;
+    font-size: var(--font-body);
+  }
+  
+  form input[type="text"],
+  form input[type="file"] {
+    width: 100%;
+    max-width: 480px;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: var(--font-body);
+    font-family: 'Alice', serif;
+  }
+  
+  form button {
+    width: 100%;
+    max-width: 480px;
+    background-color: var(--dark-blue-color);
+    color: var(--white-color);
+    border: none;
+    padding: 12px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: var(--font-body);
+  }
+  
+  form button:hover {
+    background-color: #1b2140;
+  }
+  
+  .back-link {
+    display: block;
+    margin: 20px auto 0;
+    color: var(--dark-blue-color);
+    text-decoration: none;
+    font-size: var(--font-body);
+    max-width: 480px;
+  }
+  
+  .back-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* MEDIA QUERIES */
+  
+  @media only screen and (min-width: 1024px) {
+    .report-page {
+      padding: 80px 20px;
+    }
+  
+    form {
+      gap: 20px;
+      margin-top: 60px;
+      margin-bottom: 60px;
+    }
+  
+    form input,
+    form button,
+    .back-link {
+      max-width: 520px;
+    }
+  }
+  
+  @media only screen and (max-width: 499px) {
+    h1 {
+      font-size: 1.8rem;
+    }
+  
+    h2 {
+      font-size: 1.5rem;
+    }
+  
+    form input,
+    form button,
+    .back-link {
+      width: 90%;
+      max-width: 90%;
+    }
+  
+    .container {
+      padding: 0 16px;
+    }
+  }
+  
