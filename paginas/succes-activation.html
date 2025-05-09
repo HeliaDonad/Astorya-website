@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Request Received | Astorya</title>
+  <link rel="stylesheet" href="../css/normalize.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/success.css" />
+  <link rel="icon" type="image/png" href="../images/favicon-astorya.svg" />
+</head>
+<body>
+  <div class="success-container">
+    <h1>Request Received</h1>
+    <p>Your request to activate this memorial star has been successfully submitted.<br>
+    Our team will review the provided information shortly.  
+    Once everything is in order, the star will be activated and visible in the shared sky.</p>
+
+    <p><a href="../index.html">Return to homepage</a></p>
+    <div class="redirect">You will be redirected automatically in a few seconds...</div>
+  </div>
+
+  <script>
+    setTimeout(() => {
+      window.location.href = "../index.html";
+    }, 6000);
+  </script>
+</body>
+</html>
