@@ -801,3 +801,30 @@ h1 {
       }
 }
 
+.report-section {
+    color: var(--white-color);
+    text-align: center;
+  }
+  
+  .report-section .manifesto h2 {
+    color: var(--white-color);
+  }
+  
+  .report-section .manifesto p {
+    font-family: 'Alice', serif;
+    font-size: var(--font-body);
+    line-height: 1.6;
+    color: var(--white-color);
+    text-align: justify;
+  }
+  
+  .yellow-btn {
+    background-color: var(--yellow-color);
+    color: var(--dark-blue-color);
+  }
+  
+  .yellow-btn:hover {
+    background-color: var(--yellow-color);
+    color: var(--dark-blue-color);
+  }
+  
