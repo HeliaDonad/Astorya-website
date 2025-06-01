@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,7 +13,6 @@
 <body>
   <section class="report-page">
     <div class="container">
-
       <h1>Our deepest condolences</h1>
       <p>We are truly sorry for your loss. At Astorya, we believe every life deserves a lasting memory.  
       Thank you for taking the time to honour your loved one by activating their memorial star.</p>
@@ -42,7 +42,13 @@
 
     </div>
   </section>
-
+  <!-- Popup Modal -->
+  <div id="activationPopup" class="popup hidden">
+    <div class="popup-content">
+      <p id="popupMessage"></p>
+      <button onclick="closePopup()">OK</button>
+    </div>
+  </div>
   <script src="../js/activation-form.js"></script>
 </body>
 </html>
