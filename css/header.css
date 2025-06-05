@@ -122,7 +122,7 @@ header {
   
   .subnav a {
     display: inline-block;
-    padding: 1.65em 1.2em;
+    padding: 1em 1.2em;
     text-decoration: none;
     color: var(--white-color);
     font-size: var(--font-header);
@@ -142,6 +142,33 @@ header {
 
 .subnav a.active {
   color: var(--yellow-color);
+}
+
+.vr-nav-button {
+    align-items: center;
+    background-color: #fff2cc;
+    color: var(--dark-blue-color);
+    font-family: 'Alice', serif;
+    font-size: 1rem;
+    padding: 0px;           
+    border-radius: 8px;
+    text-decoration: none;
+    margin-right: 15px;
+    margin-left: 15px;
+    justify-content: center;
+    display: inline-flex;
+    margin-top: 25px;
+}
+
+.vr-nav-button img {
+    width: 25px;
+    height: 25px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.vr-nav-button:hover {
+    background-color: var(--yellow-color);
 }
   
   @media only screen and (min-width: 778px) {
@@ -169,7 +196,7 @@ header {
     .subnav a {
       border: none;
       display: flex;
-      padding: 0px 20px;
+      padding: 0px 10px;
       color: var(--white-color);
       font-weight: 800;
       opacity: 1;
@@ -182,6 +209,23 @@ header {
     .close::after {
         display: none;
     }
+
+        /* === VR NAV BUTTON === */
+    .vr-nav-button {
+      padding: 8px 4px;
+      margin-right: 15px;
+      margin-left: 15px;
+      margin-top: -10px;
+    }
+    .vr-nav-button img {
+      width: 18px;
+      height: 18px;
+    }
+    .vr-nav-button:hover {
+      background-color: var(--yellow-color);
+    }
+
+
   }
   
   @media only screen and (min-width: 1024px) {
@@ -189,4 +233,32 @@ header {
         font-size: 16px;
     }
   }
-  
+
+/* === BANNER REPORT A PASSING === */
+.report-banner {
+  background-color: var(--yellow-color);
+  color: var(--dark-blue-color);
+  font-family: 'Alice', serif;
+  font-size: 0.95rem;
+  text-align: center;
+  padding: 8px 16px;
+  position: sticky;
+  top: 0;
+  z-index: 1001;
+  border-bottom: 1px solid var(--dark-blue-color);
+}
+
+.report-banner p {
+  margin: 0;
+}
+
+.report-banner a {
+  color: var(--dark-blue-color);
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.report-banner a:hover {
+  text-decoration: none;
+}
+
