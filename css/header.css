@@ -127,12 +127,13 @@ header {
 
 .subnav a {
     display: inline-block;
-    padding: 1em 1.2em;
+    padding: 0.65em 1.2em;
     text-decoration: none;
     color: var(--white-color);
     font-size: var(--font-header);
     font-weight: 800;
     text-align: center;
+    margin-top: 15px;
 }
 
 /* Hover effect */
@@ -159,7 +160,7 @@ header {
     margin-left: 15px;
     justify-content: center;
     display: inline-flex;
-    margin-top: 25px;
+    margin-top: 40px;
 }
 
 .vr-nav-button img {
@@ -255,9 +256,9 @@ header {
 .report-banner a {
     color: var(--dark-blue-color);
     font-weight: bold;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .report-banner a:hover {
-    text-decoration: none;
+    text-decoration: underline;
 }
