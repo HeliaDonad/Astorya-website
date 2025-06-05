@@ -7,36 +7,36 @@
 
 header {
     font-family: 'Sunroll', sans-serif;
-  }
+}
 
 #logo {
     cursor: pointer;
     text-decoration: none;
-  }
+}
 
-  #logo img {
+#logo img {
     width: 120%;
     margin-top: -18px;
-  }
-  
-  nav {
+}
+
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 25px 20px 15px 20px;
     background-color: var(--pure-black);
     /*border-bottom: 1px solid white;*/
-  }
-  
-  header {
+}
+
+header {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1000; 
-  }
-  
-  /* Hamburger */
-  .burger {
+    z-index: 1000;
+}
+
+/* Hamburger */
+.burger {
     font-family: 'Sunroll', sans-serif;
     font-size: var(--font-h2);
     padding: 0.12em 0em 0.12em 0em;
@@ -46,81 +46,86 @@ header {
     color: var(--white-color);
     transition: opacity 0.3s;
     margin-top: -5px;
-  }
-  
-  /* Kruis */
-  .close {
+}
+
+/* Kruis */
+.close {
     font-family: 'Sunroll', sans-serif;
     font-size: var(--font-h2);
     font-weight: 500;
     padding: 0.12em 0em 0.12em 0em;
     cursor: pointer;
-    display: none; 
+    display: none;
     color: var(--white-color);
     top: 28px;
     right: 20px;
-    z-index: 2;
+    z-index: 1002; /* Ensure close sits above banner */
     position: fixed;
     margin-top: -5px;
-  }
-  
-  .close::after {
+}
+
+.close::after {
     content: "✕";
     font-family: 'Sunroll', sans-serif;
     font-weight: 500;
 }
 
-  #burger:checked ~ .burger {
+#burger:checked ~ .burger {
     opacity: 0; /* Verberg hamburger */
-  }
-  
-  #burger:checked ~ .close {
+}
+
+#burger:checked ~ .close {
     display: inline-block; /* Toon kruis */
-  }
-  
-  #burger:not(:checked) ~ .burger {
+}
+
+#burger:not(:checked) ~ .burger {
     display: inline-block; /* Toon hamburger */
-  }
-  
-  #burger:not(:checked) ~ .close {
+}
+
+#burger:not(:checked) ~ .close {
     display: none;
-  }
-  
-  /* Overgangseffecten */
-  .burger,
-  .close {
+}
+
+/* Overgangseffecten */
+.burger,
+.close {
     transition: opacity 0.3s;
-  }
-  
-  #burger {
+}
+
+#burger {
     display: none;
-  }
-  
-  #burger:checked ~ .subnav {
-    transform: translateX(0); 
-  }
-  
-  #burger:checked ~ .subnav a {
+}
+
+#burger:checked ~ .subnav {
+    transform: translateX(0);
+}
+
+#burger:checked ~ .subnav a {
     opacity: 1;
     transform: translateY(0);
-  }
-  
-  .subnav {
+}
+
+/* Verberg banner wanneer het hamburger-menu open is */
+#burger:checked ~ .report-banner {
+    display: none;
+}
+
+.subnav {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    position: fixed; 
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh; 
+    height: 100vh;
     background: var(--gradient-color);
-    z-index: 1;
-    transform: translateX(-100%); 
+    z-index: 1001; /* Net boven banner, maar onder .close */
+    transform: translateX(-100%);
     /*transition: all 0.2s ease-in;*/
-  }
-  
-  .subnav a {
+}
+
+.subnav a {
     display: inline-block;
     padding: 1em 1.2em;
     text-decoration: none;
@@ -128,20 +133,17 @@ header {
     font-size: var(--font-header);
     font-weight: 800;
     text-align: center;
-  }
+}
 
-  /* Hover effect */
+/* Hover effect */
 .subnav a:hover {
-    /*color: var(--yellow-color);
-    text-decoration: underline;*/
-    /*text-decoration: underline;*/
-    text-underline-offset: 4px; 
-    transform: translateY(-2px); 
-    transition: transform 0.2s ease-in-out /*, text-decoration 0.2s ease-in-out;*/
+    text-underline-offset: 4px;
+    transform: translateY(-2px);
+    transition: transform 0.2s ease-in-out;
 }
 
 .subnav a.active {
-  color: var(--yellow-color);
+    color: var(--yellow-color);
 }
 
 .vr-nav-button {
@@ -150,7 +152,7 @@ header {
     color: var(--dark-blue-color);
     font-family: 'Alice', serif;
     font-size: 1rem;
-    padding: 0px;           
+    padding: 0px;
     border-radius: 8px;
     text-decoration: none;
     margin-right: 15px;
@@ -170,95 +172,92 @@ header {
 .vr-nav-button:hover {
     background-color: var(--yellow-color);
 }
-  
-  @media only screen and (min-width: 778px) {
+
+@media only screen and (min-width: 778px) {
     .burger, .close {
-      display: none;
+        display: none;
     }
 
     #burger:not(:checked) ~ .burger {
-        display: none; 
-      }
-  
+        display: none;
+    }
+
     .subnav {
-      position: static;
-      flex-direction: row;
-      width: auto;
-      left: auto;
-      margin-top: 0px;
-      transition: none;
-      height: auto;
-      transform: none;
-      justify-content: flex-start;
+        position: static;
+        flex-direction: row;
+        width: auto;
+        left: auto;
+        margin-top: 0px;
+        transition: none;
+        height: auto;
+        transform: none;
+        justify-content: flex-start;
         background: none;
     }
-  
+
     .subnav a {
-      border: none;
-      display: flex;
-      padding: 0px 10px;
-      color: var(--white-color);
-      font-weight: 800;
-      opacity: 1;
-      transform: none;
-      transition: none;
-      border-bottom: none;
-      font-size: 14px;
+        border: none;
+        display: flex;
+        padding: 0px 10px;
+        color: var(--white-color);
+        font-weight: 800;
+        opacity: 1;
+        transform: none;
+        transition: none;
+        border-bottom: none;
+        font-size: 14px;
     }
 
     .close::after {
         display: none;
     }
 
-        /* === VR NAV BUTTON === */
+    /* === VR NAV BUTTON === */
     .vr-nav-button {
-      padding: 8px 4px;
-      margin-right: 15px;
-      margin-left: 15px;
-      margin-top: -10px;
+        padding: 8px 4px;
+        margin-right: 15px;
+        margin-left: 15px;
+        margin-top: -10px;
     }
     .vr-nav-button img {
-      width: 18px;
-      height: 18px;
+        width: 18px;
+        height: 18px;
     }
     .vr-nav-button:hover {
-      background-color: var(--yellow-color);
+        background-color: var(--yellow-color);
     }
+}
 
-
-  }
-  
-  @media only screen and (min-width: 1024px) {
-    .subnav a{
+@media only screen and (min-width: 1024px) {
+    .subnav a {
         font-size: 16px;
     }
-  }
+}
 
 /* === BANNER REPORT A PASSING === */
 .report-banner {
-  background-color: var(--yellow-color);
-  color: var(--dark-blue-color);
-  font-family: 'Alice', serif;
-  font-size: 0.95rem;
-  text-align: center;
-  padding: 8px 16px;
-  position: sticky;
-  top: 0;
-  z-index: 1001;
-  border-bottom: 1px solid var(--dark-blue-color);
+    background-color: var(--yellow-color);
+    color: var(--dark-blue-color);
+    font-family: 'Alice', serif;
+    font-size: 0.95rem;
+    text-align: center;
+    padding: 8px 16px;
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Achter .subnav en .close */
+    border-bottom: 1px solid var(--dark-blue-color);
 }
 
 .report-banner p {
-  margin: 0;
+    margin: 0;
 }
 
 .report-banner a {
-  color: var(--dark-blue-color);
-  font-weight: bold;
-  text-decoration: underline;
+    color: var(--dark-blue-color);
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 .report-banner a:hover {
-  text-decoration: none;
+    text-decoration: none;
 }
-
