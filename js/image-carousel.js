@@ -8,8 +8,9 @@ const article2 = document.getElementById('article2');
 const article3 = document.getElementById('article3');
 const article4 = document.getElementById('article4');
 const article5 = document.getElementById('article5');
+const article6 = document.getElementById('article6');
 
-const articles = [article1, article2, article3, article4, article5];
+const articles = [article1, article2, article3, article4, article5, article6];
 
 // Functie om naar het volgende artikel te navigeren
 function nextArticle() {
